@@ -46,8 +46,9 @@ function TwoCellCervera!(v,p::Vector{Float64},t::Float64)
     gap = GapJunction!(vh, vt, gmin, gmax, 20.0, 2.0)
     
     #Calculate single cell voltages
-    dvh = SingleCell!(vh, ph, gap)
-    dvt = SingleCell!(vt, pt, gap)
+    diff = vt - vh
+    dvh = SingleCell!(vh, ph, gap * -diff)
+    dvt = SingleCell!(vt, pt, gap * diff)
     
     return SVector(dvh, dvt)
 end
