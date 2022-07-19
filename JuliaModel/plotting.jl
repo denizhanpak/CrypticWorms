@@ -1,3 +1,5 @@
+using Plots 
+
 function PlotGap!(gmax::Float64=.20,gmin::Float64=0.02)
     gjs = []
     for i in 60.0:-1.0:-60.0
@@ -37,4 +39,27 @@ function MultiPlot(p)
         end
     end
     return rv
+end
+
+function basin_plot(fractions, gmaxs, gpols)
+    gr()
+    counter = 1
+    rv = zeros(Float64, length(gmaxs),length(gpols))
+    x = string.(gmaxs)
+    y = string.(gpols)
+    for (i,gmax) in enumerate(gmaxs)
+        for (j,gpol) in enumerate(gpols)
+            rv[i,j] = fractions[counter][1]
+            counter += 1
+        end
+    end
+
+    h = heatmap(gmaxs,
+    gpols, rv,
+    xlabel="Gap Junction Max Capacitance", 
+    ylabel="Head Cell Polarization Capacitance",
+    title="Probability Map")
+
+    
+    return plot(h)
 end

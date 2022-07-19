@@ -1,10 +1,12 @@
 using DynamicalSystems
+using JLD2
 using Random
 include("./cervera_cells.jl")
+include("./plotting.jl")
 
 fs = []
-gpol_range = range(0,0.5,length=100)
-gmax_range = range(0.2,2.0,length=100)
+gpol_range = range(0,0.5,length=2)
+gmax_range = range(0.2,2.0,length=2)
 for gpol in gpol_range
     for gmax in gmax_range
         p = [gpol,gmax]
@@ -21,3 +23,7 @@ for gpol in gpol_range
         push!(fs, basins_fractions(am, sampler; N = 1000, show_progress = false))
     end
 end
+
+h = basin_plot(fs, gmax_range, gpol_range)
+savefig(h, "Basin Fractions.png")
+save "./probs.jdl2" fs
