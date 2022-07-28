@@ -16,6 +16,7 @@ end
 #Gap Junction Function in Edge form modifies e
 Base.@propagate_inbounds function GapJunctionEdge!(e, v_s, v_d, p, t)
     gmin, gmax, vth, v0 = p
+    print(p)
     numerator = gmax - gmin
     denominator_term1 = (1 + exp((v_s - v_d - vth)/v0))
     denominator_term2 = (1 + exp(-(v_s - v_d + vth)/v0))

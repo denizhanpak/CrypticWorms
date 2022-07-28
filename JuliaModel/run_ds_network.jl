@@ -3,6 +3,7 @@ using DynamicalSystems
 using NetworkDynamics
 using Random
 using Graphs
+using DifferentialEquations
 include("./cervera_cells.jl")
 include("./plotting.jl")
 
@@ -21,7 +22,9 @@ currentpump = 0.0
 gmin = 0.2 * gref
 gmax = 2.0 * gref #2.0 for cusp region
 
-cell_p=(capicitance, gpolarization, epolarization, gdepolarization, edepolarization, currentpump)
+x0 = [0.0,0.0]
+
+cell_p=(capacitance, gpolarization, epolarization, gdepolarization, edepolarization, currentpump)
 gap_p = (gmin, gmax, 20.0, 2.0)
 nd = network_dynamics(cell,gap, G)
 ode_problem = ODEProblem(nd, x0, (0.0,20.0),(cell_p,gap_p))
