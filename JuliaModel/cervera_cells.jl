@@ -16,13 +16,12 @@ end
 #Gap Junction Function in Edge form modifies e
 Base.@propagate_inbounds function GapJunctionEdge!(e, v_s, v_d, p, t)
     gmin, gmax, vth, v0 = p
-    print(p)
     numerator = gmax - gmin
-    denominator_term1 = (1 + exp((v_s - v_d - vth)/v0))
-    denominator_term2 = (1 + exp(-(v_s - v_d + vth)/v0))
+    denominator_term1 = (1.0 .+ exp.((v_s .- v_d .- vth)./v0))
+    denominator_term2 = (1.0 .+ exp.(-(v_s .- v_d .+ vth)./v0))
 
-    term2 = numerator / (denominator_term1 * denominator_term2)
-    e = gmin + term2
+    term2 = numerator ./ (denominator_term1 .* denominator_term2)
+    e = gmin .+ term2
 end
 
 Base.@propagate_inbounds function SingleCellVertex!(dv, v, edges, p, t)
@@ -30,15 +29,15 @@ Base.@propagate_inbounds function SingleCellVertex!(dv, v, edges, p, t)
     capacitance, gpol, epol, gdep, edep, inp = p
     
     #Polarization and depolarization channels
-    ipol = gpol * (v - epol)
-    idep = gdep * (v - edep)
+    ipol = gpol .* (v .- epol)
+    idep = gdep .* (v .- edep)
     
     #Return derivative of voltage
-    dv = -ipol - idep - inp
+    dv .= -ipol .- idep .- inp
     for e in edges
-        dv -= e
+        dv .-= e
     end
-    dv /= capacitance
+    dv ./= capacitance
     nothing
 end
 

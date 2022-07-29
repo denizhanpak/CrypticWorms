@@ -27,5 +27,5 @@ x0 = [0.0,0.0]
 cell_p=(capacitance, gpolarization, epolarization, gdepolarization, edepolarization, currentpump)
 gap_p = (gmin, gmax, 20.0, 2.0)
 nd = network_dynamics(cell,gap, G)
-ode_problem = ODEProblem(nd, x0, (0.0,20.0),(cell_p,gap_p))
+ode_problem = ODEProblem(nd, x0, (0.0,1000.0),(cell_p,gap_p))
 sol = solve(ode_problem);
