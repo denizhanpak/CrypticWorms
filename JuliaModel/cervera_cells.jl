@@ -21,7 +21,8 @@ Base.@propagate_inbounds function GapJunctionEdge!(e, v_s, v_d, p, t)
     denominator_term2 = (1.0 .+ exp.(-(v_s .- v_d .+ vth)./v0))
 
     term2 = numerator ./ (denominator_term1 .* denominator_term2)
-    e = gmin .+ term2
+    e .= gmin .+ term2
+    e .*= v_d .- v_s
 end
 
 Base.@propagate_inbounds function SingleCellVertex!(dv, v, edges, p, t)
