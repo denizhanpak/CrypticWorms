@@ -63,3 +63,38 @@ function basin_plot(fractions, gmaxs, gpols)
     
     return plot(h)
 end
+
+function grid_layout(g, x_count=3, y_count=3)
+    x_locs = Vector{Float64}(undef, nv(g))
+    y_locs = Vector{Float64}(undef, nv(g))
+    counter = 1
+    x_inc = 1 / x_count
+    y_inc = 1 / y_count
+    y_sum = 0
+    for i in 1:(y_count)
+        x_sum = 0
+        for j in 1:(x_count)
+           x_locs[counter] = x_sum
+           y_locs[counter] = y_sum
+           x_sum += x_inc
+           counter += 1
+        end
+        y_sum += y_inc
+    end
+    return y_locs, x_locs
+end
+
+function get_colors(states, beg_color=colorant"blue", end_color=colorant"red")
+    rv = Vector{typeof(colorant"blue")}(undef,size(states)[1])
+    for (i, state) in enumerate(states)
+        w = weighted_color_mean(state, beg_color, end_color)
+        rv[i] = w
+    end
+    return rv
+end
+
+curry(f, x) = (xs...) -> f(xs..., x)
+
+function grid_layout_generic(x_count, y_count)
+    return curry(curry(grid_layout, y_count), x_count)
+end

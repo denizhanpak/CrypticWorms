@@ -54,13 +54,16 @@ G = SimpleDiGraph(Adj)
 gpol_range = range(0.27,0.28,length=20)
 gmax_range = range(1.19,2.0,length=50)
 body = make_body(G)
-#gpol_range = [0.11]
-gmax_range = [2.0]
+gpol_range = [0.11]
+gmax_range = [0.5]
 for gpol in gpol_range
     for gmax in gmax_range
         initial = SVector(0.0,0.0)
 
         ds = body_dynamics(body, gmax, gpol)
+        tr = trajectory(ds, 1000)
+        print(tr)
+        break
         xg = yg = range(-70.0, 0.0; length = 1000)
         grid = (xg, yg)
         am = AttractorsViaRecurrences(ds, grid)
