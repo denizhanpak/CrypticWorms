@@ -1,4 +1,5 @@
 using Plots 
+theme(:dark)
 
 function PlotGap!(gmax::Float64=.20,gmin::Float64=0.02)
     gjs = []
@@ -6,7 +7,7 @@ function PlotGap!(gmax::Float64=.20,gmin::Float64=0.02)
         gj = GapJunction!(0.0,i,gmin,gmax)
         append!(gjs, gj)
     end
-    rv = plot(-60.0:60.0, gjs)
+    rv = plot(-60.0:60.0, gjs, color="teal")
     return rv
 end
 
