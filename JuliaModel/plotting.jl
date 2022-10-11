@@ -21,9 +21,9 @@ function MultiPlot(p)
     legend_set = false
     for j = -70.0:step:70.0
         for i = -70.0:step:70.0
-            u0 = [i;j]
+            u0 = SA[i,j]
             tspan = (0.00,total_steps)
-            prob = ODEProblem(TwoCellCervera!, u0, tspan, p)
+            prob = ODEProblem(twocellcervera!, u0, tspan, p)
             sol = solve(prob)
 
             # add to existing plot

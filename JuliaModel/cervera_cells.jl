@@ -75,14 +75,14 @@ function twocellcervera!(v,p,t)
     #calculate gap junction conductance
     #dv[1] = gap = gapjunction!(vh, vt, gmin, gmax,0.0,20.0)
     gap = 0.0
-    gap = gapjunction!(vh, vt, gmin, gmax, 20.0, 2.0)
+    gap = GapJunction!(vh, vt, gmin, gmax, 20.0, 2.0)
     
     #calculate single cell voltages
     diff = vt - vh
-    dvh = singlecell!(vh, ph, gap * -diff)
-    dvt = singlecell!(vt, pt, gap * diff)
+    dvh = SingleCell!(vh, ph, gap * -diff)
+    dvt = SingleCell!(vt, pt, gap * diff)
     
-    return svector(dvh, dvt)
+    return SVector(dvh, dvt)
 end
 
 function Ncellcervera!(v,p,t)
@@ -106,12 +106,12 @@ function Ncellcervera!(v,p,t)
     #calculate gap junction conductance
     #dv[1] = gap = gapjunction!(vh, vt, gmin, gmax,0.0,20.0)
     gap = 0.0
-    gap = gapjunction!(vh, vt, gmin, gmax, 20.0, 2.0)
+    gap = GapJunction!(vh, vt, gmin, gmax, 20.0, 2.0)
     
     #calculate single cell voltages
     diff = vt - vh
-    dvh = singlecell!(vh, ph, gap * -diff)
-    dvt = singlecell!(vt, pt, gap * diff)
+    dvh = SingleCell!(vh, ph, gap * -diff)
+    dvt = SingleCell!(vt, pt, gap * diff)
     
-    return svector(dvh, dvt)
+    return SVector(dvh, dvt)
 end

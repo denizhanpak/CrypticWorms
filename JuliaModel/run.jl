@@ -1,9 +1,8 @@
 using Pkg
-Pkg.add("DifferentialEquations")
-Pkg.add("Plots")
 using DifferentialEquations
 using Plots
 using DynamicalSystems # also exports relevant StaticArrays names
+using StaticArrays
 theme(:dark)
 
 include("./plotting.jl")
@@ -25,7 +24,7 @@ savefig(pl, "Cervera_Plot_$i.png")
 end
 =#
 
-p = [0.011,2.0]
+p = [1.0,2.0]
 pl = MultiPlot(p)
 savefig(pl, "Cervera_Plot.png")
 
