@@ -1,0 +1,180 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{amsmath, amssymb}
+
+
+\renewcommand{\baselinestretch}{2}
+
+% figure support
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+   \def\svgwidth{\columnwidth}
+   \import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+\title{}
+\author{Denizhan Pak}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+Biological systems are characterized by their robust stability under
+a wide range of conditions. This is in part achieved by the ability
+of such systems to take on different stable states
+depending on contextual factors. One set of mechanisms that allows for such 
+behavior is the presence of multiple long term stable states. Multistability
+appears in a vast range of biological process ranging from microscale
+genetic networks to macroscale population interactions. Multistability has
+emerged as a useful concept in a range of experimental phenomena.
+
+However, unlike theoretical models in the experimental context stochasticity
+is unavoidable. As a result a common empirical practice is to sample what 
+would be in the model context, many possible trajectories of the system. 
+Such sampling leads to a distribution of the stable states expressed as 
+probabilities. Developmental dynamics are a particularly interesting case 
+since the distribution of attractor states remaining constant across 
+different conditions seems to be a consistent feature.
+
+Two examples of this phenomenon are the regeneration of the planerian flatworm
+and the learning of reach-to-grasp in infants. In the case of planerian
+theoretical models reveal how under certain environmental conditions 
+planerian can develop into two possible configurations. Similarly, infant
+prehension can be modeled as bistable with reach without grasp as one state
+and reach with grasp as another, expressing both possibilities in the right
+environmental context. Although an unexpected experimental finding is that in
+both cases: the probability distributions across surprisingly large changes
+to the relevant context remains relatively static. 
+From a theoretical standpoint this seems 
+counter-intuitive since such changes would be expected to shift the basins
+of attraction and hence change the resultant probability distribution.
+
+In this work we propose a method to exploit such a regularity. We consider
+theoretical models for both phenomena and identify a how such fixed 
+probabilities provide a set of constraints on the relationship between model
+parameters. This allows us to make predictions as what various parameter 
+values should be. We start by demonstrating the method in a simplified model
+of bistability  then extend it to models of both flatworm regeneration and
+prehension development.
+
+Bistability is abundant in biology (cite). It seems to 
+be a fundamental property of processes ranging from multicelularity 
+to concscious experience (cite). This recurring theme is appropriate since
+bistability is the lowest complexity equilibrium structure aside
+from monostability. It is also the nascent mechanism for how a single
+sytem can express more than one final state. 
+
+Although bistability has been studied in a range of models, experimental
+curioisities still remain. Experimental conditions are probabilistic
+with scientific uncertainty playing a fundamental role. In this context
+one phenomnon has appeared in multiple developmental systems
+and yet remains unexplored in a simpler context. Developmental bistable systems
+under experimental conditions seem to have remarkably fixed probability
+distributions even as the microscopic conditions of the control
+parameters fluctuate.
+
+To explore this phenomnon we propose a method for analyzing the 
+relationship between the oberved probability distribution and the control
+parameters of bistable model. We first consider the case of a simplified
+toy model that will serve as an intuition pump and help us apply the method
+to two different experimental systems. We will use a 
+model of planarian flatworm regenerataion and model of infant 
+prehension learning.
+
+In the cases above we will consider how varying the model parameters
+changes the resulting probability distribution and the implications for
+those parameters when such a probability distribution is fixed. 
+
+The methods is 6 steps:
+\begin{enumerate}
+    \item Select a one dimensional model of bistability
+    \item Select a sampling distribution (for this work, we consider 
+        the case of the normal distribution).
+    \item Since the system is one dimensional we can use the cdf of the sampling
+        distribution to determine the probability that points are one side
+        of the basin of attraction by using the unstable equilibrium as 
+        the parameter. This is equivalent to defining a binomial distribution
+        from the CDF of a normal distribution.
+    \item We set the CDF equal to the observed fixed binomial distribution
+        probability
+        then identify the correct value for the position of the
+        unstable equilibrium point.
+    \item Solve for the equillibria as a function of your control parameters
+    \item Knowing the correct value for the position of the unstable ep we
+        constrain our control parameters using the relation we derived.
+        This can give us an experimental prediction for the range of the 
+        relevant control parameters.
+
+\end{enumerate}
+
+\section {Results}
+\subsection{The Cubic}
+Here we build an intuition of the method using the cubic equation.
+
+First we define the dynamical equation governing our toy model. The cubic equation:
+\[
+    \dot{y} = \beta_1 + \beta_2 y + y^3
+\]
+
+The two parameters $\beta_1$ and $\beta_2$ are linearly decomposable and thus
+we can visual their influence on the equilibrium points.
+\\Visaul here\\
+
+The effect is that $\beta_2$ determines the curvature around the center
+and $\beta_1$ determines where the function reaches equilibrium.
+If this is within the curved region this is an example of bistability.
+We are interested in the case where one samples from the state space of
+this system at random. We must make an assumption about the form this sampling
+procedure takes. For simplicity we will assume the sampling distribution is a 
+normal distribution (mean=0, std=1). Although the method is generic and can
+be used for any sampling distribution we will use a normal distribution with
+the standard mean and variance for simplicity.
+
+Since this a one-dimensional bistable system whether a given trajectory ends
+in one state or the other is simply a function of whether it is greater than
+or smaller than the saddle point. This is thus equivalent to asking for the
+cumulative distribution function of the sampling distribution CDF(x<X) where
+$X$ is the position of the unstable equilibrium point.
+\\Visualize this\\
+The CDF relates the position of the unstable equilibrium point to the 
+binomial probability of falling in one basin or another. In the case of the
+normal distribution we write out the cdf:
+\\normal cdf\\
+However, this is a bit difficult to work with since it requires numerical 
+computation. Instead we will use the analytic approximation given by (cite).
+\\analytic approximation\\
+Now the position of the equilibrium point can uniquely define the resulting
+probability of the sampled trajectory entering either basin. To relate this
+probability back to the model parameters, we must define the relation from
+the parameters $\beta_1$ and $\beta_2$ to the position of the unstable
+equilibrium point. In the case of the cubic we can do this analytically.
+We relate the two as follows:
+\[
+    \dot{y} = \beta_1 + \beta_2 y + y^3
+    \rightarrow \beta_1-\dot{y}=-\beta_2 y + y^3
+    \rightarrow \beta_1 + \beta_2 y -\dot{y}=y^3
+    \rightarrow \beta_1+\beta_2 y= y^3 + \dot{y}
+\]
+We have the additional constraint that
+\[
+    \ddot{y} > 0
+\]
+by virtue of the fact that we are looking for the unstable equilibrium point.
+Therefore by specifying a given probability we can identify an $X$ which
+specifies a position for the unstable equilibrium. If we plot the position
+of the equilibrium points as a function of the parameters $\beta_1$ and $\beta_2$,
+we get the familiar looking cusp bifurcation. We can embed that cusp bifurcation
+in a 3D space by adding the probability distribution defined by that point in 
+parameter space as the third dimension
+\\viz here\\
+Given that visualization we can simply draw a plane at the desired probability point.
+This defines a line or a relation between $\beta_1$ and $\beta_2$ that must be
+preserved for the system to have the given probability that it does. 
+
+\end{document}

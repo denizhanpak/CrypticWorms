@@ -1,0 +1,59 @@
+
+The thread of continuity between mind and life is expressed in many forms (Thompson).
+From the ecological nature of information (Wilson) to the neural basis of cognition 
+(Churchland) to the hormonal basis of emotion (Feldman-Barrett). Another expression of
+this continuity is most often treated as a homonym rather than a unifying principle,
+with few exceptions (Gottlieb, Lincklater, Heisenger). However, the line between 
+growing and learning is much more fractal than we may initially suspect.\\
+
+Development by it's very nature is dynamic. However, both learning and 
+growth are concerned with the emergence of stable structure through a 
+changing process. Although, that structure may take the form of a behavior
+or a body respectively it still must follow the mathematical laws that
+govern the formation of stable structures from dynamics.\\
+
+One common form of stable structure emerging from a dynamical process is
+bistability. Bistability is the formation of two possible equilibrium states
+of a system. Thus it is one of the simplest forms of structure that can 
+emerge from a system of interacting processes. It is also found in abundance
+across both developmental biology (cite) and developmental psychology (cite).
+Therefore developing an understanding of bistability could serve as an important
+stepping stone for recognizing the unity of learning and growth.\\
+
+Although many theoretical tools exist for the study of bistable systems there is
+less research on how such systems can be understood in the context of experimental
+results. In this work we present a method for connecting a dynamical model of 
+a bistable system to probabilistic outcomes from experiments. First we explore this
+method in the case of a tractable toy model where we can derive the exact relationships
+which we then explore numerically in the context of two separate experimentally
+motivated models. We demonstrate how the method can clarify the roles of parameters in
+a dynamical model and provide testable hypothesis about relationships of manipulations
+in the experimental setting. Finally, the experimental examples we consider are from
+the developmental biology and developmental psychology literature demonstrating how
+considering learning and growth as homologous processes can provide novel insights
+in interpreting experimental results. 
+
+Let us consider the case of bistability. Many biological systems, differentiating
+cells, neural assemblies, behaviors have multiple modes of activity. The simplest 
+example being two modes of activity. Bistability is abundant across biological systems.
+For this paper we will consider two examples from different branches of development.
+The development or morphology and the development of behavior. In the first case we
+find that there is bistability lurking in the development of planarian flatworm. In
+the simplified abstraction the flatworm may end up as either a one-headed or two-headed
+variant. On the other end we consider an example from behavioral development specifically
+human infants and prehension. The development of reach to grasp in infants is also governed
+by what seems to be bistable dynamics.\\
+Although there is much to be said about the theoretical tools available for the study of
+bistable systems, for a unified science we must also consider the implications as they relate
+to experimental results in such systems. Experimental results are often confounded by the many
+real world factors that are ignored in pure theoretical work. This makes it difficult to increase
+the discussion between the two fields. In this paper we propose one method that seeks to 
+slightly alleviate this problem. We consider how one could use a dynamical model of bistability
+relate this to stochastic experimental results and use that relation to gather new insight
+about the model.\\
+We will do this by first considering the method in the context a simplified toy model (a cubic
+equation) then relating the technique back to the experimental systems previously menntioned
+above. We will show how this method can give novel ways of thinking about parameter relations
+in a model and how this perspective can help inspire new experimental designs.
+
+\section{Methods}

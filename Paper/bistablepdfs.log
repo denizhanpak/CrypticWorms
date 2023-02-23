@@ -1,0 +1,302 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2022.9.14)  19 FEB 2023 23:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bistablepdfs.tex
+(./bistablepdfs.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-04-06>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count175
+) (./alifeconf.sty
+Conference Style for ALIFE
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 85.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 85.
+\titlebox=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count176
+\l__pdf_internal_box=\box45
+)
+(./bistablepdfs.aux)
+\openout1 = `bistablepdfs.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
+7.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count177
+\scratchdimen=\dimen137
+\scratchbox=\box46
+\nofMPsegments=\count178
+\nofMParguments=\count179
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count180
+\MPscratchDim=\dimen138
+\MPnumerator=\count181
+\makeMPintoPDFobject=\count182
+\everyMPtoPDFconversion=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 78.
+
+Overfull \vbox (18.16972pt too high) detected at line 78
+ []
+
+
+Package natbib Warning: Citation `WIL' on page 1 undefined on input line 141.
+
+
+Package natbib Warning: Citation `GE77' on page 1 undefined on input line 142.
+
+
+Package natbib Warning: Citation `GE93' on page 1 undefined on input line 142.
+
+
+Package natbib Warning: Citation `ECL96' on page 1 undefined on input line 149.
+
+
+
+Package natbib Warning: Citation `BS' on page 1 undefined on input line 155.
+
+
+Package natbib Warning: Citation `SB96' on page 1 undefined on input line 158.
+
+
+Package natbib Warning: Citation `BP96' on page 1 undefined on input line 158.
+
+
+Package natbib Warning: Citation `NFST' on page 1 undefined on input line 162.
+
+[1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
+
+Package natbib Warning: Citation `IAL' on page 2 undefined on input line 169.
+
+Package epstopdf Info: Source file: <fig1.eps>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 12513 bytes
+(epstopdf)             Output file: <fig1-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 6693 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig1-eps-converted-to.pdf 
+fig1.eps>
+(epstopdf)             \includegraphics on input line 246.
+Package epstopdf Info: Output file is already uptodate.
+<fig1-eps-converted-to.pdf, id=13, 315.1775pt x 386.44376pt>
+File: fig1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig1-eps-converted-to.pdf>
+Package pdftex.def Info: fig1-eps-converted-to.pdf  used on input line 246.
+(pdftex.def)             Requested size: 151.76744pt x 186.08646pt.
+
+Package natbib Warning: Citation `CHU' on page 2 undefined on input line 258.
+
+[2 <./fig1-eps-converted-to.pdf>]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+89.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+Package natbib Warning: Citation `OBA' on page 3 undefined on input line 292.
+
+
+Package natbib Warning: Citation `CHU' on page 3 undefined on input line 331.
+
+Package epstopdf Info: Source file: <fig2.eps>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 17746 bytes
+(epstopdf)             Output file: <fig2-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 8556 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig2-eps-converted-to.pdf 
+fig2.eps>
+(epstopdf)             \includegraphics on input line 343.
+Package epstopdf Info: Output file is already uptodate.
+<fig2-eps-converted-to.pdf, id=25, 307.1475pt x 420.57124pt>
+File: fig2-eps-converted-to.pdf Graphic file (type pdf)
+<use fig2-eps-converted-to.pdf>
+Package pdftex.def Info: fig2-eps-converted-to.pdf  used on input line 343.
+(pdftex.def)             Requested size: 166.2212pt x 227.60565pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 366.
+
+Package natbib Warning: Citation `LT94' on page 3 undefined on input line 370.
+
+[3 <./fig2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig3.eps>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 70201 bytes
+(epstopdf)             Output file: <fig3-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 28793 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig3-eps-converted-to.pdf 
+fig3.eps>
+(epstopdf)             \includegraphics on input line 418.
+Package epstopdf Info: Output file is already uptodate.
+<fig3-eps-converted-to.pdf, id=32, 303.1325pt x 405.515pt>
+File: fig3-eps-converted-to.pdf Graphic file (type pdf)
+<use fig3-eps-converted-to.pdf>
+Package pdftex.def Info: fig3-eps-converted-to.pdf  used on input line 418.
+(pdftex.def)             Requested size: 162.6075pt x 217.52692pt.
+Package epstopdf Info: Source file: <fig4.eps>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 69567 bytes
+(epstopdf)             Output file: <fig4-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 28536 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig4-eps-converted-to.pdf 
+fig4.eps>
+(epstopdf)             \includegraphics on input line 440.
+Package epstopdf Info: Output file is already uptodate.
+<fig4-eps-converted-to.pdf, id=33, 303.1325pt x 405.515pt>
+File: fig4-eps-converted-to.pdf Graphic file (type pdf)
+<use fig4-eps-converted-to.pdf>
+Package pdftex.def Info: fig4-eps-converted-to.pdf  used on input line 440.
+(pdftex.def)             Requested size: 162.6075pt x 217.52692pt.
+
+
+Package natbib Warning: Citation `ABH' on page 4 undefined on input line 451.
+
+Package epstopdf Info: Source file: <fig5.eps>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 16366 bytes
+(epstopdf)             Output file: <fig5-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-20 17:31:14
+(epstopdf)                    size: 5824 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig5-eps-converted-to.pdf 
+fig5.eps>
+(epstopdf)             \includegraphics on input line 456.
+Package epstopdf Info: Output file is already uptodate.
+<fig5-eps-converted-to.pdf, id=34, 282.05376pt x 394.47375pt>
+File: fig5-eps-converted-to.pdf Graphic file (type pdf)
+<use fig5-eps-converted-to.pdf>
+Package pdftex.def Info: fig5-eps-converted-to.pdf  used on input line 456.
+(pdftex.def)             Requested size: 158.99377pt x 222.36644pt.
+[4 <./fig3-eps-converted-to.pdf> <./fig4-eps-converted-to.pdf>]
+No file bistablepdfs.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[5
+
+ <./fig5-eps-converted-to.pdf>] (./bistablepdfs.aux) ) 
+Here is how much of TeX's memory you used:
+ 1654 strings out of 480623
+ 23412 string characters out of 5906692
+ 271354 words of memory out of 5000000
+ 17547 multiletter control sequences out of 15000+600000
+ 553628 words of font info for 60 fonts, out of 8000000 for 9000
+ 1138 hyphenation exceptions out of 8191
+ 38i,11n,29p,586b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf
+-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cou
+rier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bistablepdfs.pdf (5 pages, 243381 bytes).
+PDF statistics:
+ 100 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+
