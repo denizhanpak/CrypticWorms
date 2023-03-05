@@ -1,6 +1,6 @@
 \documentclass[letterpaper]{article}
 
-\usepackage{natbib,alifeconf}  %% The order is important
+\usepackage{natbib,alifeconf,amsmath}  %% The order is important
 
 
 % *****************
@@ -53,13 +53,12 @@
 
 
 
-\title{Critical Exponent of Species-Size Distribution in Evolution}
-\author{Chris Adami$^{1}$, Ryoichi Seki$^{1,2}$ \and Robel Yirdaw$^2$ \\
+\title{A Method For Relating Experimental Data to Bistable Dynamical Systems}
+\author{Anonymous Author$^{1}$, Anonymous Author2$^{1,2}$ \\
 \mbox{}\\
 $^1$California Institute of Technology, Pasadena, CA 91125 \\
 $^2$California State University, Northridge, CA 91330 \\
-$^*$Each submission will undergo a double-blind review process. To this end, submissions should NOT contain any element that could reveal \\ the identity of the authors (author names, affiliations, funding details and acknowledgments), and should use the third person to refer to \\ previous work by the authors. These notes should be removed/commented out, but please remember that the page limit will remain, strictly, \\8 pages (not including citations) in case of acceptance, with mandatory name(s), affiliation(s), and email address of a corresponding author. \\
-adami@caltech.edu} % email of corresponding author
+anon@ymous.com} % email of corresponding author
 
 
 % For several authors from the same institution use the same number to
@@ -80,12 +79,12 @@ adami@caltech.edu} % email of corresponding author
 \begin{abstract}
 % Abstract length should not exceed 250 words
     We present a novel method for relating experimental probability
-    distributions of bistable systems to the parameters of a
-    bistable model. We demonstrate that when such probability 
+    distributions of multistable systems to the parameters of a
+    multistable model. We demonstrate that when such probability 
     distributions are fixed this implies that there is a fixed
     set of relations among the model parameters. Such relations 
     can help make predictions of parameters that aren't measured
-    from ones that are.We apply this method
+    from ones that are. We apply this method
     to the canonical example of a bistable dynamical system: the cubic
     system.
     As well as to two theoretical models one of planerian regeneration
@@ -99,401 +98,346 @@ of such systems to take on different stable states
 depending on contextual factors. One set of mechanisms that allows for such 
 behavior is the presence of multiple long term stable states. Multistability
 appears in a vast range of biological process ranging from microscale
-genetic networks to macroscale population interactions. Multistability has
-emerged as a useful concept in a range of experimental phenomena.
+genetic networks to macroscale population interactions. Across many levels 
+of time and space biological systems seem to be able to adapt to new contexts
+by maintaining multiple dominant stable modes.
 
-However, unlike theoretical models in the experimental context stochasticity
+Multistability has also
+emerged as a useful tool in a explaining a large range of experimental phenomena.
+Unlike theoretical models however, in the experimental context stochasticity
 is unavoidable. As a result a common empirical practice is to sample what 
-would be in the model context, many possible trajectories of the system. 
+would be in the model, many possible trajectories of the system until they
+reach equilibrium. 
 Such sampling leads to a distribution of the stable states expressed as 
-probabilities. Developmental dynamics are a particularly interesting case 
-since the distribution of attractor states remaining constant across 
-different conditions seems to be a consistent feature.
+probabilities. This allows the experimenter to characterize the attractor
+landscape and identify the range of possible equillibria.
+
+Developmental dynamics are a particularly interesting case of multistability. 
+Developing systems whether behaviorial or morphological demonstrate multistability 
+that is not only context depedent but expresses deep regularity in the timing of 
+state transitions. In the case of behavior this can be observed in the existence
+of critical periods or the milestones like progression developmental stages. 
+In the case of morphological development we see this in the stage structure of
+embryogenesis. A mechanistic understanding of how such regularity emerges is 
+still in it's infancy.
+
+In the context of the probabilisitic approach used to experimentally 
+study multistability, this regularity manifests as an observable oddity.
+The probability distributions of developing systems ending up in a given
+state is uncharacteristacally consistent across different individuals 
+in what would seem to be different conditions. The intuitive assumption
+would be that each system would show a unique probability distribution
+dependent upon individual factors. Instead, we observe that the probability
+distributions are consistently species specific rather than individual specific.
 
 Two examples of this phenomenon are the regeneration of the planerian flatworm
 and the learning of reach-to-grasp in infants. In the case of planerian
 theoretical models reveal how under certain environmental conditions 
-planerian can develop into two possible configurations. Similarly, infant
-prehension can be modeled as bistable with reach without grasp as one state
-and reach with grasp as another, expressing both possibilities in the right
+planerian can develop into two possible configurations. In a natural context
+the planerian when cut in two will regrow. The tail will regrow a head and the
+head will grow a tail. However, experimental data from the Levin lab shows that
+if the local electrical potential in the environment changes it is possible for 
+a worm head to grow another head. Even, stranger is that if the potential
+is altered only slightly, cryptic worms will emerge. Cryptic worms when cut 
+may grow another head or a tail. In the case of the tail the child worm is 
+also cryptic, even if returned to a normally polarized environment. The oddity
+is that as long as the worm is cryptic the head-tail growth probability is $70\%$
+regardless of the degree of polarization. This fixed probability is unexpected 
+based on the basic theoretical assumptions one would make based on models of the
+system.
+
+Similarly, infant
+prehension can be modeled as bistable: reach without grasp as one state
+and reach with grasp as another, the system expresses both possibilities in the right
 environmental context. Although an unexpected experimental finding is that in
 both cases: the probability distributions across surprisingly large changes
-to the relevant context remains relatively static. 
+to the relevant context remains relatively static. Infants maintain an extended 
+period in which grasping starts to occur at a fixed probability. This is not a gradual
+increase but rather a phase transition where for an extended period of time the probabilty
+of reaching with and without grasping stays the same.
 From a theoretical standpoint this seems 
-counter-intuitive since such changes would be expected to shift the basins
-of attraction and hence change the resultant probability distribution.
+counter-intuitive since changes over time and across infants would be expected 
+to shift the basins of attraction and hence change the resultant probability 
+distribution. Instead we see a period of relatively static probability.
 
-In this work we propose a method to exploit such a regularity. We consider
-theoretical models for both phenomena and identify a how such fixed 
+Although, the source of this phenomena may be system specific and rely on deep
+biological principles it serves as a fascinating example where the theoretical 
+tools of dynamical systems could serve as a means of making experimental predictions.
+In this work we propose a method to exploit such multistable regularity. We consider
+theoretical models for both of these phenomena and identify how fixed 
 probabilities provide a set of constraints on the relationship between model
-parameters. This allows us to make predictions as what various parameter 
+parameters. This allows us to make predictions as to what various parameter 
 values should be. We start by demonstrating the method in a simplified model
 of bistability  then extend it to models of both flatworm regeneration and
 prehension development.
-
+\section{Related Work}
+Much work has been done to relate experimental results to dynamical
+models since traditional statistical techniques are often insufficient 
+to constrain dynamic models and non-linearity complicates many tools used 
+in traditional time series methods. Here I will cite examples of such
+methods $\ldots$
 \section{Results}
+In the following sections we first introduce our method by motivating
+and applying it to a toy model which is a popular mathematical model
+of bistability. Once we work through the method in this simplified 
+context, we apply the same technique to the two mentioned systms and 
+identify where approximations or assumptions need to be made.
 \subsection{The Cubic Equation}
-\subsection{Infant Prehension}
-\subsection{Planerian Regeneration}
+Here we build an intuition of the method using the cubic equation. Suppose
+we have a system of interest that is best modeled as a dynamical system
+with a single state that can reach one of two equillibria. The model
+fitting work has been done and we have identified the cubic as an 
+accurate model of the dynamics of the system. However, we also notice
+that although the exact position of bistable states differs in different
+experimental contexts, the relative probability of which of the two
+equillibria the system ends up in remains constant. What does this 
+tell us about our system?
+This is the question we are trying to answer using the proposed method.\\
 
-The idea that the evolutionary process occurs in spurts, jumps, and
-bursts rather than gradual, slow and continuous changes has been
-around for over 75 years \citep{WIL}, but has gained prominence as
-``punctuated equilibrium'' through the work of \citet{GE77,GE93}. The
-general idea is that evolutionary innovations are not bestowed upon an
-existing species as a whole, gradually, but rather by the emergence of
-{\em one} better adapted mutant which, by its superiority, serves as
-the seed of a new breed that sweeps through an ecological niche and
-supplants the species previously occupying it. The global dynamics
-thus has a microscopic origin, as shown experimentally, e.g., in
-populations of {\it E. Coli} \citep{ECL96}.
-
-Such avalanches can be viewed in two apparently contradictory ways. On
-the one hand we may consider the wave of extinction touching all
-species that are connected by their ecological relations, a process
-akin to percolation and therefore suitably described by the language
-of second-order critical phenomena \citep{BS}. Such a scenario relies
-on the {\em coevolution} of species (to build their ecological
-relations) and successfully describes power-law distributions obtained
-from the fossil record \citep{SB96,BP96}. There is, on the other hand,
-a description in terms of {\em informational} avalanches that does not
-require coevolution and leads to the same statistics, as we show
-here. Rather than contradicting the aforementioned picture
-\citep{NFST}, we believe it to be complementary.
-
-In the following, we set up a scenario in which {\em information} is
-viewed as the agent of self-organization in evolving and adapting
-populations. Information is, in the strict sense of Shannon theory, a
-measure of correlation between two ensembles: here a population of
-genomes and the environment it is adapting to. As described elsewhere
-\citep{IAL}, this correlation grows as the population stores more and
-more information about the environment via random measurements,
-implementing a very effective {\em natural Maxwell demon}. Any time a
-stochastic event increases the information stored in the population, a
-wave of extinction removes the less adapted genomes and establishes a
-new era. Yet, information cannot leave the population as a whole,
-which therefore may be thought of as protected by a {\em
-semi-permeable membrane} for information, the hallmark of the Maxwell
-demon. Let us consider this dynamics in more detail.
-
-The simple living systems we consider here are populations of
-self-replicating strings of instructions, coded in an alphabet of
-dimension ${\cal D}$ with variable string length $\ell$. The total
-number of possible strings is exponentially large. Here, we consider
-the subset of all strings currently in existence in a finite
-population of size $N$, harboring $N_g$ different types, where
-$N_g\ll{\cal D}^\ell$. Each {\em genotype} (particular sequence of
-instructions) is characterized by its replication rate $\epsilon_i$,
-which depends on the sequence only, while its survival rate is given
-by $\epsilon_i/\langle \epsilon\rangle$, in a ``stirred-reactor''
-environment that allows a mean-field picture. This average replication
-rate $\langle \epsilon\rangle$ characterizes the fitness of the
-population as a whole, and is given by
+First we define the dynamical equation governing our model. We use
+the cubic equation The cubic equation:
 \begin{eqnarray}
-\langle \epsilon\rangle=\sum_i^{N_g}\frac{n_i}N \epsilon_i\;,
+    \dot{y} = \beta_1 + \beta_2 y + y^3
 \end{eqnarray}
-where $n_i$ is the {\em occupation number}, or frequency, of genotype
-$i$ in the population. As $N_g$ is not fixed in time, the average
-depends on time also, and is to be taken over all genotypes currently
-living. The total abundance, or size, of a genotype is then
-\begin{eqnarray}
-s_i=\int_0^\infty n_i(t)\, dt=\int_{T_c}^{T_e}n_i(t)\, dt\;,
-\label{size}
-\end{eqnarray}
-where $T_c$ is the time of creation of this particular genotype, and
-$T_e$ the moment of extinction. Before we obtain this distribution in
-Avida, let us delve further into the statistical description of the
-extinction events.
 
-At any point in time, the fate of every string in the population is
-determined by the craftiness of the best adapted member of the
-population, described by $\epsilon_{\rm best}$. In this simple,
-finite, world, which does not permit strings to affect other members
-of the population except by replacing them, not being the best reduces
-a string to an ephemeral existence. Thus, every string is
-characterized by a {\em relative} fitness, or {\em inferiority}
-\begin{eqnarray}
-E_i=\epsilon_{\rm best}-\epsilon_i
-\end{eqnarray}
-which plays the role of an {\em energy} variable for strings of
-information {IAL}. Naturally, $\langle E\rangle=0$ characterizes the
-{\em ground state}, or vacuum, of the population, and strings with
-$E_i>0$ can be viewed as occupying {\em excited} states, soon to
-``decay'' to the ground state (by being replaced by a string with
-vanishing inferiority). Through such processes, the dynamics of the
-system tend to minimize the average inferiority of the population, and
-the fitness landscape of replication rates thus provides a Lyapunov
-function. Consequently, we are allowed to proceed with our statistical
-analysis. Imagine a population in equilibrium, at minimal average
-inferiority as allowed by the ``temperature'': the rate (or more
-precisely, the probability) of mutation. Imagine further that a
-mutation event produces a new genotype, fitter than the others,
-exploiting the environment in novel ways, replicating faster than all
-the others. It is thus endowed with a new best replication rate,
-$\epsilon_{\rm best}^{\rm new}$, larger than the old ``best'' by an
-amount $\Delta \epsilon$, and redefining what it means to be
-inferior. Indeed, all inferiorities must now be {\em renormalized}:
-what passed as a ground state ($E=0$) string before now suddenly finds
-itself in an excited state. The seed of a new generation has been
-sown, a phase transition must occur. In the picture just described,
-this is a first-order phase transition with latent heat
-$\Delta\epsilon$ (see Fig.\ref{fig1}), starting at the ``nucleation''
-point, and leading to an expanding {\em bubble} of ``new phase''.
-
-
+The two parameters $\beta_1$ and $\beta_2$ are linearly decomposable and thus
+we can visual their influence on the equilibrium points(Figure \ref{fig1}).
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=2.1in,angle=-90]{fig1.eps}
-\caption{``Energies'' (inferiorities) of strings in a first-order
-  phase transition with latent heat $\Delta\epsilon$.}
+\includegraphics[width=2.1in,angle=0]{./cubic_params.png}
+\caption{The effect is that $\beta_2$ determines the curvature around the center
+and $\beta_1$ determines where the function reaches equilibrium.
+If this is within the curved region this is an example of bistability.}
 \label{fig1}
 \end{center}
 \end{figure}
 
-This bubble expands with a speed given by the Fisher velocity
-\begin{eqnarray}
-v\sim\sqrt{D\Delta\epsilon}\;, \label{eq4}
-\end{eqnarray}
-where $D$ is the diffusion coefficient (of information) in this
-medium, until the entire population has been converted \citep{CHU}.
-This marks the end of the phase transition, as the population returns
-to equilibrium via mutations acting on the new species, creating new
-diversity and restoring the {\em entropy} of the population to its
-previous value. This prepares the stage for a new avalanche, as only
-an equilibrated population is vulnerable to even the smallest
-perturbation. The system has returned to a critical point, driven by
-mutations, self-organized by information.
+We are interested in the case where one samples from the state space of
+this system at random. We must make an assumption about the form this sampling
+procedure takes. We will assume the sampling distribution is a 
+uniform distribution within a bounded state range for all three cases. 
+Although the method is generic and can
+be used for any sampling distribution we will use a uniform distribution 
+since it is both the maximum entropy distribution and provides a simple 
+way to conceptualize the method.
 
-Thus we see how a first-order scenario, without coevolution, can lead
-to self-organized and critical dynamics. It takes place within a
-single, finite, ecological niche, and thus does not contradict the
-dynamics taking place for populations that span many niches. Rather,
-we must conclude that the descriptions complement each other, from the
-single-niche level to the ecological web. Let us now take a closer
-look at the statistics of avalanches in this model, i.e., at the
-distribution of genotype sizes.
-
-
-\section{Exponents and Power Laws}
-
-\hyphenation{ap-proximated}
-
-In this particular system avalanche size can be approximated
-by the size $s$ of the genotype that gave rise to it,
-Eq.~(\ref{size}).  We shall measure the distribution of these sizes
-$P(s)$ in the Artificial Life system Avida, which implements a
-population of self-replicating computer programs written in a simple
-machine language-like instruction set of ${\cal D}=24$ instructions,
-with programs of varying sequence length. In the course of
-self-replication, these programs produce mutant off-spring because the
-{\tt copy} instruction they use is flawed at a rate $R$ errors per
-instruction copied, and adapt to an environment in which the
-performance of {\em logical} computations on externally provided
-numbers is akin to the catalysis of chemical reactions \citep{OBA}. In
-this {\em artificial chemistry} therefore, successful computations
-accelerate the metabolism (i.e., the CPU) of those strings that carry
-the {\em gene} (code) necessary to perform the trick, and any program
-discovering a new trick is the seed of another avalanche.
-
-Avida is not a stirred-reactor environment (although one can be
-simulated). Rather, the programs live on a two-dimensional grid, each
-program occupying one site. The size of the grid is finite, and chosen
-in these experiments to be small enough that avalanches are generally
-over before a new one starts. As is well-known, this is the condition
-{\em sine qua non} for the observation of SOC behavior, a separation
-of time scales which implies that the system is driven at
-infinitesimal rates.
-
-Let $\tau$ denote the average duration of an avalanche. Then, a
-separation of time scales occurs if the average time between the
-production of new seeds of avalanches is much larger than $\tau$. New
-seeds, in turn, are produced with a frequency $\langle\epsilon\rangle
-P$, where $\langle\epsilon\rangle$ is again the average replication
-rate, and $P$ is the mutation probability (per replication period) for
-an average sequence of length $\ell$,
-\begin{eqnarray}
-P=1-(1-R)^\ell\;.
-\end{eqnarray}
-For small enough $R$ and not too large $\ell$ (so that the product
-$R\ell$ is smaller than unity) we can approximate
-$P\approx R\ell$, and infinitesimal driving occurs in the limit
-\begin{eqnarray}
-\langle \epsilon\rangle R\ell \ll\frac1\tau\;.\label{cond}
-\end{eqnarray}
-Furthermore
-\begin{eqnarray}
-\tau\sim\frac{L}v
-\end{eqnarray}
-with $L$ the diameter of the system and $v$ a typical Fisher velocity.
-The fastest waves are those for which the latent heat is of the order
-of the new fitness, i.e., $\Delta\epsilon\sim\epsilon$, in which case
-$v\approx \epsilon$ \citep[because $D\sim\epsilon$ in
-Eq.~(\ref{eq4}),][]{CHU}, and a separation of time scales is assured
-whenever
-\begin{eqnarray}
-\frac1{R\ell}\gg {L}\;,
-\end{eqnarray}
-that is, in the limit of vanishing mutation rate or small population
-sizes. For the $L=60$ system used here, this condition is obeyed (for
-the fastest waves) only for the smallest mutation rate tested and
-sequence lengths of the order of the ancestor.
-
+Since this a one-dimensional bistable system whether a given trajectory ends
+in one state or the other is simply a function of whether it is greater than
+or smaller than the saddle point position. This is thus equivalent to asking for the
+cumulative distribution function of the sampling distribution $CDF(x<X)$ where
+$X$ is the position of the unstable equilibrium point (Figure \ref{fig2}).
 
 \begin{figure}[t]
-\includegraphics[width=2.3in, angle=90]{fig2.eps}
-\caption{Fitness of the dominant genotype in the population, $\epsilon_{\rm best}$ as a function of time (in updates).}
+\begin{center}
+\includegraphics[width=2.1in,angle=0]{./basins.png}
+\caption{Here we see the phase portrait of the system. The blue points represent
+the stable equillibria and the red points is the saddle node. The magenta volume
+represents the region of points that will end up in one basin and the cyan volume
+represents the rest of the volume which will end up in the other basin of attraction.}
+
 \label{fig2}
+\end{center}
 \end{figure}
 
-
-In the following, we keep the population size constant (a $60\times60$
-grid) and vary the mutation rate. From the previous arguments, we
-expect true scale-free dynamics only to appear in the limit of small
-mutation rates.  As in this limit avalanches occur less and less
-frequently, this is also the limit where data are increasingly
-difficult to obtain, and other finite size effects can come into play.
-We shall try to isolate the scale-free regime by fitting the
-distribution to a power law
-\begin{eqnarray}
-P(s)\sim s^{-D(R)}\label{power}
+The CDF relates the position of the unstable equilibrium point to the 
+binomial probability of falling in one basin or another. In the case of the
+uniform distribution we write out the cdf:
+\begin{eqnarray} 
+  CDF(x<X) = \frac{\text{ub} - X}{\text{ub}-\text{lb}}
 \end{eqnarray}
-and monitor the behavior of $D$ from low to high mutation rates.
+Intuitively this is simply the area of the cyan volume in Figure 2 divided by the 
+area spanned by the whole volume of cyan + magenta. ub, lb are the upper and lower
+bounds.\\
+Now the position of the saddle point can uniquely define the resulting
+probability of the sampled trajectory entering either basin. To relate this
+probability back to the model parameters, we must define the relation from
+the parameters $\beta_1$ and $\beta_2$ to the position of the unstable
+equilibrium point. In the case of the cubic we can do this analytically.
+We relate the two as follows:
+\begin{eqnarray}
+    \beta_1+\beta_2 y = y^3 + \dot{y}\\
+    \dot{y} = 0\\
+    \ddot{y} > 0
+\end{eqnarray}
+We visualize this relation as a surface in Figure 3. Notice that the surface only exist
+in a portion of the parameter space. This is a result of the fact that the model exhibits
+a bifurcation. Only when the curvature caused by $\beta_2$ is sufficient and the $beta_1$
+parameter defines the x-intercept along that curvature is a saddle point defined. It
+This also means that the probability of being in the basin is 0 (or 1 depending on
+which basin we choose as the basis) for all parameters outside a given range.\\
+We can plot the probability as a function of the parameters $\beta_1$ and $beta_2$.
+If we only plot the surface where the probability is not $0$ (or $1$) we get the 
+familiar looking cusp bifurcation, however in this case the surface is embedded in probability
+space and thus has a curvature as a result of the shifting basin sizes.
+By specifying a given probability we can 
+specify a position for the unstable equilibrium. If we plot the position
+of the equilibrium points as a function of the parameters $\beta_1$ and $\beta_2$,
+we get the familiar looking cusp bifurcation. We can embed that cusp bifurcation
+in a 3D space by adding the probability distribution defined by a given point in 
+parameter space as the third dimension (Figure \ref{fig4}).
 
-In Fig.~\ref{fig2}, we display a typical history of $\epsilon_{\rm
-best}$, i.e., the fitness of the dominant genotype.\footnote{As the
-replication rate $\epsilon$ is exponential in the bonus obtained for a
-successful computation, $\epsilon_{\rm best}$ increases exponentially
-with time.}  Note the ``staircase'' structure of the curve reflecting
-the ``punctuated'' dynamics, where each step reflects a new avalanche
-and concurrently an extinction event. Staircases very much like these
-are also observed in adapting populations of {\it E. Coli}
-\citep{LT94}.
-
-As touched upon earlier, the Avida world represents an environment
-replete with information, which we encode by providing bonuses for
-performing logical computations on externally provided (random)
-numbers. The computations rewarded usually involve two inputs $A$ and
-$B$, are finite in number and listed in Table~1. At the end of a
-typical run (such as Fig.~\ref{fig2}) the population of programs is
-usually proficient in almost all tasks for which bonuses are given
-out, and the genome length has grown to several multiples of the
-initial size to accommodate the acquired information.
-
-\begin{table}[h]
-\center{
-\begin{tabular}{|c|c|c|c|}\hline
-Name & Result & Bonus $b_i$ & Difficulty\\ \hline\hline
-Echo & I/O   & 1 & --\\
-Not  & $\neg A$ & 2 & 1 \\
-Nand & $\neg(A\wedge B)$ & 2 & 1 \\
-Not Or & $\neg A \vee B$ & 3 & 2 \\
-And  &  $ A \wedge B $   & 3 & 2 \\
-Or   &  $ A \vee B $     & 4 & 3 \\
-And Not & $A\wedge\neg B$& 4 & 3 \\
-Nor  & $\neg(A\vee B)$   & 5 & 4 \\
-Xor  & $ A\ {\rm xor}\ B$ &   6 & 4 \\
-Equals &$\neg(A\ {\rm xor}\ B)$&6& 4 \\ \hline
-\end{tabular}
-}
-\vskip 0.25cm
-\caption{Logical calculations on random inputs $A$ and $B$ rewarded,
-bonuses, and difficulty (in minimum number of {\tt nand} instructions
-required). Bonuses $b_i$ increase the speed of a CPU by a factor
-$\nu_i=1+2^{b_i-3}$.}
-\end{table}
-
-Because the amount of information stored in the landscape is finite,
-adaptation, and the associated avalanches, must stop when the
-population has exhausted the landscape.  However, we shall see that
-even a `flat' landscape (on which evolution is essentially neutral
-after the sequence has optimized its replicative strategy) gives rise
-to a power law of genotype sizes, as long as the programs do not
-harbor an excessive amount of ``junk'' instructions.  A typical
-abundance distribution (for the run depicted in Fig.~\ref{fig2}) is
-shown in Fig.~\ref{fig3}.
-
-
-\begin{figure}[ht]
+\begin{figure}[t]
 \begin{center}
-\includegraphics[width=2.25in, angle=90]{fig3.eps}
-\caption{Distribution of genotypes sizes $P(s)$ fitted to a power law
-  (solid line) at mutation rate $R=0.004$.}
+\includegraphics[width=2.1in,angle=0]{./saddle_cubic.png}
+\caption{This is the surface of the saddle point location as a function of
+the parameter $\beta_1 and \beta_2$.}
 \label{fig3}
 \end{center}
 \end{figure}
 
-
-As mentioned earlier, we can also turn {\em off} all bonuses listed in
-Tab.~1, in which case fitness is related to replicative abilities
-only. Still, avalanches occur (within the first 50,000 updates
-monitored) due to minute improvements in fitness, but the length of
-the genomes typically stays in the range of the ancestor, a program of
-length 31 instructions. We expect a change of dynamics once the
-``true'' maximum of the local fitness landscape is reached, however,
-we did not reach this regime in the experiments presented here. The
-distribution of genotype sizes for the flat landscape is depicted in
-Fig.~\ref{fig4}.
-
-
-\begin{figure}[!tbp]
+\begin{figure}[t]
 \begin{center}
-\includegraphics[width=2.25in, angle=90]{fig4.eps}
-\caption{Distribution of genotypes sizes $P(s)$ for a landscape devoid
-  of the bonuses listed in Tab.~1, at mutation rate $R=0.003$.} \label{fig4}
+\includegraphics[width=2.1in,angle=0]{./cubic_pg.png}
+\caption{This is the surface of the saddle point location as a function of
+the parameter $\beta_1$ and $\beta_2$.}
+\label{fig4}
 \end{center}
 \end{figure}
 
+Given that visualization we can simply draw a plane at the desired probability point
+in the z-axis. For the purposes of visualization we will assume our desired probability
+is $0.7$.
+This defines a line or a relation between $\beta_1$ and $\beta_2$ that must be
+preserved for the system to have the given probability that it does. Which in this case
+can be explitly be written as 
+\begin{eqnarray} 
+  c = 0.343 - 0.7d
+\end{eqnarray}
 
-Clearly then, even such landscapes (flat with respect to all other
-activities except replication) are not neutral. Indeed, it is known
-that neutral evolution, where the chance for a genotype to increase or
-decrease in number is even, leads to a power law in the abundance
-distribution with exponent $D=1.5$ \citep{ABH}.
-
+\subsection{Infant Prehension}
+In the previous section we demonstrated how this method can be applied to a simple
+toy model and how given an experimentally observed probability we could make a prediction
+about the model parameters. However, in many cases the exact model parameters are 
+not singular observables but instead are a function of observables. In such cases we 
+must accommodate the method by relating the saddle point position not to the model
+parameters but to the desired experimental observable.\\
+This will be the case as we apply the method to a model of the development of 
+reach-to-grasp in infants. Experiments reveal what seems to be a phase transition 
+during infant development of prehension. \\
+In this case it is observed that infants go 
+from reaching to an object to reaching and grasping for an object where over an extended
+period of time of 8 weeks (cite) the probability of exhibiting one of the two behaviors 
+remains constant. This is true across infants even though the observable parameters
+that are used for the model seem to vary over this period. The fact that this probability
+remains constant thus might imply a fixed relation between parameters such as the line
+we observe in the case of the cubic.\\
+We will consider this dynamical model of prehension bistability:
+\begin{eqnarray}
+  \beta_1 + \beta_2 (\frac{x-51.04}{26.98}) - (\frac{x-51.04}{26.98})^3
+\end{eqnarray}
+where
+\begin{eqnarray}
+  \beta_1 = 5.98 - 1.07f + 31.92g\\
+  \beta_2 = 5.56 - 0.25f + 0.38g
+\end{eqnarray}
+Notice that this equation is quite similar to the cubic however both $\beta_1$ and 
+$\beta_2$ are linear sums of other parameters: $f,g$ where $f$ is the arm circumference
+of the infant and $g$ is the arm weight. In this case, we relate the saddle point 
+location to these parameters instead of the cubic paramaters(Figure \ref{fig5}).
 
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=2.2in, angle=90]{fig5.eps}
-\vskip 0.25cm
-\caption{Fitted exponent of power law for 34 runs at mutation rates
-  between $R=0.0005$ and $R=0.01$ copy errors per instruction
-  copied. The error bars reflect the standard deviation across the
-  sample of runs taken at each mutation rate. The solid line is to
-  guide the eye only.
-}
+\includegraphics[width=2.1in,angle=0]{./prehension_params.png}
+\caption{3x3 grid of variation in $f,g$ and resulting manifold}
 \label{fig5}
 \end{center}
 \end{figure}
 
+In this case since the parameters are linear functions of the observables we can
+still simply solve for the saddle point location analytically giving us the saddle 
+point as a function of the observables,visualized in Figure \ref{fig6}. 
 
-In order to test the dependence of the fitted exponent $D(R)$
-[Eq.~(\ref{power})] on the mutation rate, we conduct a set of
-experiments at varying copy-mutation rates from $0.5\times10^{-3}$ to
-$10\times10^{-3}$ and take data for 50,000 updates. Again, a ``best''
-genotype is not reached after this time, and we must assume that
-avalanches were still occurring at the end of these runs. Furthermore,
-in some runs we find that a genotype comes to dominate the population
-(usually after most `genes' have been discovered) which carries an
-unusual amount of junk instructions. As mentioned earlier, such
-species produce a distribution that is exponentially suppressed at
-large genotype sizes (data not shown). To avoid contamination from
-such species, we stop recording genotypes after a plateau of fitness
-was reached, i.e., if the population had discovered most of the
-bonuses. Furthermore, in order to minimize finite size effects on the
-determination of the critical exponent, we excluded from this fit all
-genotype abundances larger than 15, i.e., we only fitted the smallest
-abundances. Indeed, at larger mutation rates the higher abundances are
-contaminated by a pile-up effect due to the toroidal geometry, while
-at lower mutation rates a scale appears to enter which prevents
-scale-free behavior. We have not, as yet, been able to determine the
-origin of this scale.
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=2.1in,angle=0]{./saddle_prehension.png}
+\caption{The position of the saddle point as a manifold in parameter space as we vary
+parameter $f,g$.}
+\label{fig6}
+\end{center}
+\end{figure}
 
-In the results reported here, we show the dependence of the fitted
-exponent $D$ as a function of the mutation rate $R$ used in the run,
-which, however, is a good measure of the mutation probability $P$ only
-at small $R$ and if the sequence length is not excessive. As a
-consequence, data points at large $R$, as well as runs where an
-excessive sequence length developed, carry a systematic error.
+We can again draw the bifurcation diagram in the 
+3D space and intersect it with the probability plane. Once again using the uniform CDF
+and taking the inverse function to find the saddle points that satisfy 
+our binomial probability distribution of 0.5 we are able to solve for where the 
+bifurcation plane and the probability plane intersect
+
+Once again we get a line that relates the two observables $f,g$ with the equation:
+\begin{eqnarray}
+  \text{prehension line}
+\end{eqnarray}
+We may make a prediction that the fixed probability distribution implies that the
+relation between arm circumference and arm weight follow the equation above during
+the 8 week period of constant probability.
+
+\subsection{Planerian Regeneration}
+Finally, we consider the case where the bistable equation is not a cubic. Instead
+here we look at the regenetation of the planarian flatworm. In the case of plenaria,
+experimental observation has found that head-tail patterning utillizes bioelectrical
+signaling between cells. Changes in bioelectrical environment of the organism can
+lead to a planerian flatworm that develops two heads instead of one. However, it is 
+also possible for worms to generate descendant cryptic worms. Such cryptic 
+worms after being cut may develop into normal worms or two-headed worms with a
+fixed probability. \\
+\begin{eqnarray}
+  \text{worm model equations}
+\end{eqnarray}
+Cryptic worms have been interepreted as maintaing a bistable
+dynamic where they may fall into the attractor basin of one or two-heads after being
+cut. This dynamic has been explored in a simplified model which was able to make 
+some predictions that reinforce the idea this system is bistable. However, the model
+also shows that basin sizes change as a function of parameter variation which is 
+inconsistent with the observation that cryptic worms universally express a probability
+of 0.3 in growing two heads (cite).\\
+The method we propose can help us better understand this discrepency by directing 
+us to consider how the relevant parameters of the model must be related for such a 
+fixed probability distribution to emerge.\\
+We will use the same methodology as before although in this case we cannot simply
+determine the saddle point location as a function of the parameters analytically.
+Rather we must use a numerical method to relate the saddle point location to the
+parameters of the model (Figure \ref{fig7}).
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=2.1in,angle=0]{./worm_params.png}
+\caption{Saddle point location as a function of the two parameters}
+\label{fig7}
+\end{center}
+\end{figure}
+
+Again, we can identify the appropriate 
+position of the saddle point based on the known binomial probability of 0.3. This 
+allows us to plot the bifurcation diagram across the probability axis as before and find
+the intersection of the bifurcation with the plane at $p=0.3$.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=2.1in,angle=-90]{./fig2.png}
+\caption{Bifurcation in probability space}
+\label{fig6}
+\end{center}
+\end{figure}
+
+Unlike before we cannot define this intersection analytically however we can
+generate a table of values that predicts how the two parameters must be related
+if the probability remains constant. We can then plot table to see the relationship
+more clearly.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=2.1in,angle=-90]{./fig2.png}
+\caption{Worm parameters plot}
+\label{fig7}
+\end{center}
+\end{figure}
+
+From here we can see how the constant probability distribution presents a set of 
+constraints on the parameters of the dynamical model. In turn such constraints can
+be used to make emprical predictions which can further validate or contradict the
+model as a hypothesis.
+
+\section{Discussion}
+
+\pagebreak
 
 \section{Acknowledgements}
 

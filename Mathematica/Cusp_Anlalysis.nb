@@ -1,0 +1,80 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2364,         72]
+NotebookOptionsPosition[      1744,         51]
+NotebookOutlinePosition[      2137,         67]
+CellTagsIndexPosition[      2094,         64]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"<<", "\"\</home/denpak/Applications/Dynamica.m\>\""}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.428408800722522*^9, 3.428408804087109*^9}, {
+  3.428408848404909*^9, 3.428408851240087*^9}, {3.448883800778164*^9, 
+  3.448883801408106*^9}, {3.4488874274666643`*^9, 3.448887428463591*^9}, {
+  3.6806889500748053`*^9, 3.680688958155731*^9}, {3.876572849835917*^9, 
+  3.8765729013274183`*^9}},
+ CellLabel->
+  "In[101]:=",ExpressionUUID->"5e13423a-c4c1-4b47-af0e-b96425771d71"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Dynamica (Version 1.0.11 - 5/8/2021), Copyright(c) \
+1993-2021 Randall D. Beer. All rights reserved.\"\>"], "Print",
+ CellChangeTimes->{3.87657290161033*^9, 3.876574381236291*^9},
+ CellLabel->
+  "During evaluation of \
+In[101]:=",ExpressionUUID->"3322ee21-4bae-4930-9261-709c2649a36d"],
+
+Cell[BoxData["\<\"THIS SOFTWARE IS DISTRIBUTED 'AS IS'. NO WARRANTY OF ANY \
+KIND IS EXPRESSED OR IMPLIED.\"\>"], "Print",
+ CellChangeTimes->{3.87657290161033*^9, 3.8765743812415953`*^9},
+ CellLabel->
+  "During evaluation of \
+In[101]:=",ExpressionUUID->"36e74302-f813-464a-9357-f2308c5bb6e6"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1080, 1872},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"13.0 for Linux x86 (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2df7cdbc-9046-460f-acde-0e6228270ed2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 512, 9, 45, "Input",ExpressionUUID->"5e13423a-c4c1-4b47-af0e-b96425771d71",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[1117, 35, 303, 5, 23, "Print",ExpressionUUID->"3322ee21-4bae-4930-9261-709c2649a36d"],
+Cell[1423, 42, 293, 5, 23, "Print",ExpressionUUID->"36e74302-f813-464a-9357-f2308c5bb6e6"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
