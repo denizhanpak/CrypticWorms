@@ -183,6 +183,68 @@ of bistability. Once we work through the method in this simplified
 context, we apply the same technique to the two mentioned systms and 
 identify where approximations or assumptions need to be made.
 \subsection{The Cubic Equation}
+To make the method as clear as it can be we imagine a hypothetical developmental
+process. We imagine an alien that is born yellow. As the alien ages depending
+on various factors it may turn cyan or magenta. After much experimental observation
+and some intense curve fitting and validation we identify a model that predicts 
+which color a member of this alien species will become. The model is a dynamic
+model that assumes that the color is a one dimensional variable that reaches 
+an equillibria of either cyan or magenta. The model looks exactly like the cubic 
+equation (eq 1).
+\begin{eqnarray}
+    \dot{y} = \beta_1 + \beta_2 y + y^3
+\end{eqnarray}
+In this case $y$ represents the color of the alien. $\beta_1$ is the age of puberty,
+or the age where the color is determined and $\beta_2$ is the saturation parameter that
+tells us how colorful the skin will end up being. In the more abstract language of
+development we may think of $\beta_1$ as the instructive parameter that says what the
+specific outcomes will be and $\beta_2$ as the permissive parameter that defines the
+range of possible outcomes. This relationship can be visualized by plotting the 
+equation with different parameter values (Figure \ref{fig1}).\\\\
+We use the cubic equation not only because it best fits our made up alien but rather
+because it is one of the simplest examples of a multistable system. It is a 
+two parameter system that with the appropriate range of parameters exhibits bistable
+dynamics. Any initial condition will end up in one of two stable states. In this
+case these states are the magenta or cyan skin color.\\\\
+The aliens are very protective of their young and the experimentalists are not able
+to observe the process of many aliens coloring to maturity but since the aliens love
+cologne it is easy for the experimentalists to join a cluster of adults and count
+how many of each color there are. This is not simply a hypothetical since it is often
+easier to sample developmental outcomes than it is to sample longitudinal developmental
+trajectories. Luckily our dynamical model gives us an intuitive way of thinking about
+what those counts mean. If we imagine each individual as a specific trajectory through
+the state space of the model then we are simply sampling initial conditions and counting
+how many end up in each basin of attraction, we visualize ths in Figure \ref{fig2}. Note
+that further we will assume that all such sampled trajectories come from a bounded region.
+This will come in play later on.\\\\
+Based on this interpretation we would expect that by counting more individuals we would
+get a good sense of the relative size of the two basins of attraction. Our model
+predicts that the relative size of the basins of attraction is a function of the saddle
+point location. The saddle point indicates an outcome that is not only unlikely but is
+so unstable that it pushes other outcomes away from it. We can even solve for the saddle
+point using tools from dynamical systems theory. The saddle point ($SP$) is a point where the
+  dynamical equation equals 0 and the derivative of that equation is positive (cite).
+  Solving for those criterion we get:
+\begin{eqnarray}
+SP = \frac{\sqrt[3]{-6} 
+\left(\sqrt{81 \beta_1^2-12 \beta_2^3}-9 \beta_1\right)^{2/3}-2 (-3)^{2/3} \beta_2}{3\ 2^{2/3} \sqrt[3]{\sqrt{81 \beta_1^2-12 \beta_2^3}-9 \beta_1}}
+\end{eqnarray}
+Although a little hairy this equation tells us that the saddle point is a function of
+the variables $\beta_1$ and $\beta_2$. Depending only on what these parameters are we
+can determine where the saddle point will be. Thus these parameters must also determine
+the sizes of the basins.\\\\
+The fascinating result the alienologists find is that there
+are always 3 cyan aliens for 7 magenta aliens. This seems to be the case regardless
+of which cluster they observe. This is especially odd because many alienologists have
+also observed that the age of puberty is different in different clusters.
+If we consider this oddity in the context of our dynamical
+model one way to interpret it is that we observe a fixed ratio of the basins of
+attraction in the model. Intuitively this shouldn't be the case since the different
+clusters have different parameters which would imply different basin sizes. Although
+seemingly contrived as will be detailed later, this situation seems to occur in the two
+example development systems we will discuss below.
+
+
 Here we build an intuition of the method using the cubic equation. Suppose
 we have a system of interest that is best modeled as a dynamical system
 with a single state that can reach one of two equillibria. The model
