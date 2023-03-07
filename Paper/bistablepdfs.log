@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.10.31)  6 MAR 2023 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2022.9.14)  7 MAR 2023 13:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **bistablepdfs.tex
 (./bistablepdfs.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14>
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-04-06>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -32,14 +32,14 @@ LaTeX Info: Redefining \cite on input line 694.
 ) (./alifeconf.sty
 Conference Style for ALIFE
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
@@ -75,7 +75,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks16
 \ex@=\dimen137
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -105,37 +105,30 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count183
 \dspbrk@lvl=\count184
-\tag@help=\toks16
+\tag@help=\toks17
 \row@=\count185
 \column@=\count186
 \maxfields@=\count187
-\andhelp@=\toks17
+\andhelp@=\toks18
 \eqnshift@=\dimen140
 \alignsep@=\dimen141
 \tagshift@=\dimen142
 \tagwidth@=\dimen143
 \totwidth@=\dimen144
 \lineht@=\dimen145
-\@envbody=\toks18
+\@envbody=\toks19
 \multlinegap=\skip53
 \multlinetaggap=\skip54
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count188
 \l__pdf_internal_box=\box47
 )
-(./bistablepdfs.aux
-
-LaTeX Warning: Label `fig6' multiply defined.
-
-
-LaTeX Warning: Label `fig7' multiply defined.
-
-)
+(./bistablepdfs.aux)
 \openout1 = `bistablepdfs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
@@ -156,20 +149,19 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
 6.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count189
 \scratchdimen=\dimen146
 \scratchbox=\box48
 \nofMPsegments=\count190
 \nofMParguments=\count191
-\everyMPshowfont=\toks20
+\everyMPshowfont=\toks21
 \MPscratchCnt=\count192
 \MPscratchDim=\dimen147
 \MPnumerator=\count193
 \makeMPintoPDFobject=\count194
-\everyMPtoPDFconversion=\toks21
+\everyMPtoPDFconversion=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -196,7 +188,7 @@ Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -215,167 +207,101 @@ e
 ))
 Underfull \vbox (badness 3503) has occurred while \output is active []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 196--228
-
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 196--228
-\OT1/ptm/m/n/10 sys-tem that with the ap-pro-pri-ate range of pa-ram-e-ters
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--228
-
- []
-
-
-Underfull \hbox (badness 1127) in paragraph at lines 196--228
-\OT1/ptm/m/n/10 The aliens are very pro-tec-tive of their young and the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--228
-
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 196--228
-\OT1/ptm/m/n/10 Based on this in-ter-pre-ta-tion we would ex-pect that by
- []
-
-
-Overfull \hbox (10.18974pt too wide) in alignment at lines 228--231
+<./cubic_params.png, id=12, 878.53218pt x 885.3075pt>
+File: ./cubic_params.png Graphic file (type png)
+<use ./cubic_params.png>
+Package pdftex.def Info: ./cubic_params.png  used on input line 210.
+(pdftex.def)             Requested size: 151.76744pt x 152.93184pt.
+<./basins.png, id=13, 1246.6575pt x 153.57375pt>
+File: ./basins.png Graphic file (type png)
+<use ./basins.png>
+Package pdftex.def Info: ./basins.png  used on input line 243.
+(pdftex.def)             Requested size: 151.76744pt x 18.69519pt.
+ [2 <./cubic_params.png (PNG copy)>]
+Overfull \hbox (10.18974pt too wide) in alignment at lines 263--269
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--246
+Underfull \vbox (badness 4726) has occurred while \output is active []
 
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 248--258
-
- []
-
-<./cubic_params.png, id=20, 878.53218pt x 885.3075pt>
-File: ./cubic_params.png Graphic file (type png)
-<use ./cubic_params.png>
-Package pdftex.def Info: ./cubic_params.png  used on input line 269.
-(pdftex.def)             Requested size: 151.76744pt x 152.93184pt.
-<./basins.png, id=21, 1246.6575pt x 153.57375pt>
-File: ./basins.png Graphic file (type png)
-<use ./basins.png>
-Package pdftex.def Info: ./basins.png  used on input line 294.
-(pdftex.def)             Requested size: 151.76744pt x 18.69519pt.
-[3 <./cubic_params.png (PNG copy)> <./basins.png (PNG copy)>]
-<./saddle_cubic.png, id=25, 508.14844pt x 253.69781pt>
+ [3 <./basins.png (PNG copy)>]
+<./saddle_cubic.png, id=27, 508.14844pt x 253.69781pt>
 File: ./saddle_cubic.png Graphic file (type png)
 <use ./saddle_cubic.png>
-Package pdftex.def Info: ./saddle_cubic.png  used on input line 343.
+Package pdftex.def Info: ./saddle_cubic.png  used on input line 375.
 (pdftex.def)             Requested size: 151.76744pt x 75.76927pt.
-<./cubic_pg.png, id=26, 627.09282pt x 427.5975pt>
+<./cubic_pg.png, id=28, 627.09282pt x 427.5975pt>
 File: ./cubic_pg.png Graphic file (type png)
 <use ./cubic_pg.png>
-Package pdftex.def Info: ./cubic_pg.png  used on input line 352.
+Package pdftex.def Info: ./cubic_pg.png  used on input line 399.
 (pdftex.def)             Requested size: 151.76744pt x 103.48674pt.
-<./prehension_params.png, id=27, 898.85812pt x 910.15031pt>
+ [4 <./saddle_cubic.png (PNG copy)> <./cubic_pg.png (PNG copy)>]
+<./prehension_params.png, id=32, 898.85812pt x 910.15031pt>
 File: ./prehension_params.png Graphic file (type png)
 <use ./prehension_params.png>
-Package pdftex.def Info: ./prehension_params.png  used on input line 402.
+Package pdftex.def Info: ./prehension_params.png  used on input line 493.
 (pdftex.def)             Requested size: 151.76744pt x 153.66803pt.
-<./saddle_prehension.png, id=28, 590.205pt x 420.82219pt>
+ [5 <./prehension_params.png (PNG copy)>]
+<./saddle_prehension.png, id=36, 590.205pt x 420.82219pt>
 File: ./saddle_prehension.png Graphic file (type png)
 <use ./saddle_prehension.png>
-Package pdftex.def Info: ./saddle_prehension.png  used on input line 414.
+Package pdftex.def Info: ./saddle_prehension.png  used on input line 535.
 (pdftex.def)             Requested size: 151.76744pt x 108.21042pt.
- [4 <./saddle_cubic.png (PNG copy)> <./cubic_pg.png (PNG copy)> <./prehension_p
-arams.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 436--444
-
- []
-
-<./worm_params.png, id=32, 703.12688pt x 709.90219pt>
+ [6 <./saddle_prehension.png (PNG copy)>]
+<./worm_params.png, id=40, 703.12688pt x 709.90219pt>
 File: ./worm_params.png Graphic file (type png)
 <use ./worm_params.png>
-Package pdftex.def Info: ./worm_params.png  used on input line 463.
+Package pdftex.def Info: ./worm_params.png  used on input line 622.
+(pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
+File: ./worm_params.png Graphic file (type png)
+<use ./worm_params.png>
+Package pdftex.def Info: ./worm_params.png  used on input line 639.
 (pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
 
-Underfull \hbox (badness 1668) in paragraph at lines 446--468
-\OT1/ptm/m/n/10 Cryptic worms have been in-terepreted as main-taing a
- []
+Underfull \vbox (badness 6477) has occurred while \output is active []
 
-
-LaTeX Warning: File `./fig2.png' not found on input line 476.
-
-
-! Package pdftex.def Error: File `./fig2.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.476 ...aphics[width=2.1in,angle=-90]{./fig2.png}
-                                                  
-? 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
-76.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-
-LaTeX Warning: File `./fig2.png' not found on input line 489.
-
-
-! Package pdftex.def Error: File `./fig2.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.489 ...aphics[width=2.1in,angle=-90]{./fig2.png}
-                                                  
-? 
-[5 <./saddle_prehension.png (PNG copy)> <./worm_params.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+File: ./worm_params.png Graphic file (type png)
+<use ./worm_params.png>
+Package pdftex.def Info: ./worm_params.png  used on input line 663.
+(pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
+File: ./worm_params.png Graphic file (type png)
+<use ./worm_params.png>
+Package pdftex.def Info: ./worm_params.png  used on input line 677.
+(pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
+ [7 <./worm_params.png (PNG copy)>]
 No file bistablepdfs.bbl.
-[6] (./bistablepdfs.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[8] (./bistablepdfs.aux) ) 
 Here is how much of TeX's memory you used:
- 2784 strings out of 483183
- 38759 string characters out of 5966291
- 281485 words of memory out of 5000000
- 17741 multiletter control sequences out of 15000+600000
- 550004 words of font info for 58 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 38i,12n,29p,239b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb>
-Output written on bistablepdfs.pdf (6 pages, 578947 bytes).
+ 2714 strings out of 480623
+ 37932 string characters out of 5906692
+ 289263 words of memory out of 5000000
+ 18568 multiletter control sequences out of 15000+600000
+ 549489 words of font info for 56 fonts, out of 8000000 for 9000
+ 1137 hyphenation exceptions out of 8191
+ 38i,14n,29p,239b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on bistablepdfs.pdf (8 pages, 603921 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
