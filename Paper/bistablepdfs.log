@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2022.9.14)  7 MAR 2023 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.10.31)  8 MAR 2023 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **bistablepdfs.tex
 (./bistablepdfs.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-04-06>
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -32,14 +32,14 @@ LaTeX Info: Redefining \cite on input line 694.
 ) (./alifeconf.sty
 Conference Style for ALIFE
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
@@ -75,7 +75,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
+\@emptytoks=\toks15
 \ex@=\dimen137
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -105,26 +105,34 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count183
 \dspbrk@lvl=\count184
-\tag@help=\toks17
+\tag@help=\toks16
 \row@=\count185
 \column@=\count186
 \maxfields@=\count187
-\andhelp@=\toks18
+\andhelp@=\toks17
 \eqnshift@=\dimen140
 \alignsep@=\dimen141
 \tagshift@=\dimen142
 \tagwidth@=\dimen143
 \totwidth@=\dimen144
 \lineht@=\dimen145
-\@envbody=\toks19
+\@envbody=\toks18
 \multlinegap=\skip53
 \multlinetaggap=\skip54
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count188
 \l__pdf_internal_box=\box47
 )
@@ -156,152 +164,136 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \scratchbox=\box48
 \nofMPsegments=\count190
 \nofMParguments=\count191
-\everyMPshowfont=\toks21
+\everyMPshowfont=\toks20
 \MPscratchCnt=\count192
 \MPscratchDim=\dimen147
 \MPnumerator=\count193
 \makeMPintoPDFobject=\count194
-\everyMPtoPDFconversion=\toks22
+\everyMPtoPDFconversion=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Underfull \vbox (badness 3503) has occurred while \output is active []
 
- [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
-]
-<./cubic_params.png, id=12, 878.53218pt x 885.3075pt>
+] [2]
+<./cubic_params.png, id=22, 878.53218pt x 885.3075pt>
 File: ./cubic_params.png Graphic file (type png)
 <use ./cubic_params.png>
-Package pdftex.def Info: ./cubic_params.png  used on input line 210.
+Package pdftex.def Info: ./cubic_params.png  used on input line 292.
 (pdftex.def)             Requested size: 151.76744pt x 152.93184pt.
-<./basins.png, id=13, 1246.6575pt x 153.57375pt>
+<./basins.png, id=23, 1246.6575pt x 153.57375pt>
 File: ./basins.png Graphic file (type png)
 <use ./basins.png>
-Package pdftex.def Info: ./basins.png  used on input line 243.
+Package pdftex.def Info: ./basins.png  used on input line 322.
 (pdftex.def)             Requested size: 151.76744pt x 18.69519pt.
- [2 <./cubic_params.png (PNG copy)>]
-Overfull \hbox (10.18974pt too wide) in alignment at lines 263--269
+
+Overfull \hbox (10.18974pt too wide) in alignment at lines 339--345
  [][][] []
  []
 
-
-Underfull \vbox (badness 4726) has occurred while \output is active []
-
- [3 <./basins.png (PNG copy)>]
-<./saddle_cubic.png, id=27, 508.14844pt x 253.69781pt>
+<./saddle_cubic.png, id=24, 570.63188pt x 316.18124pt>
 File: ./saddle_cubic.png Graphic file (type png)
 <use ./saddle_cubic.png>
-Package pdftex.def Info: ./saddle_cubic.png  used on input line 375.
-(pdftex.def)             Requested size: 151.76744pt x 75.76927pt.
-<./cubic_pg.png, id=28, 627.09282pt x 427.5975pt>
-File: ./cubic_pg.png Graphic file (type png)
-<use ./cubic_pg.png>
-Package pdftex.def Info: ./cubic_pg.png  used on input line 399.
-(pdftex.def)             Requested size: 151.76744pt x 103.48674pt.
- [4 <./saddle_cubic.png (PNG copy)> <./cubic_pg.png (PNG copy)>]
-<./prehension_params.png, id=32, 898.85812pt x 910.15031pt>
+Package pdftex.def Info: ./saddle_cubic.png  used on input line 349.
+(pdftex.def)             Requested size: 151.76744pt x 84.09157pt.
+[3 <./cubic_params.png (PNG copy)> <./basins.png (PNG copy)> <./saddle_cubic.pn
+g (PNG copy)>]
+<./cubic_h.png, id=29, 938.00438pt x 500.62032pt>
+File: ./cubic_h.png Graphic file (type png)
+<use ./cubic_h.png>
+Package pdftex.def Info: ./cubic_h.png  used on input line 423.
+(pdftex.def)             Requested size: 151.76744pt x 80.99463pt.
+ [4 <./cubic_h.png (PNG copy)>]
+<./prehension_params.png, id=33, 898.85812pt x 910.15031pt>
 File: ./prehension_params.png Graphic file (type png)
 <use ./prehension_params.png>
-Package pdftex.def Info: ./prehension_params.png  used on input line 493.
+Package pdftex.def Info: ./prehension_params.png  used on input line 552.
 (pdftex.def)             Requested size: 151.76744pt x 153.66803pt.
- [5 <./prehension_params.png (PNG copy)>]
-<./saddle_prehension.png, id=36, 590.205pt x 420.82219pt>
+<./saddle_prehension.png, id=34, 405.76593pt x 269.50688pt>
 File: ./saddle_prehension.png Graphic file (type png)
 <use ./saddle_prehension.png>
-Package pdftex.def Info: ./saddle_prehension.png  used on input line 535.
-(pdftex.def)             Requested size: 151.76744pt x 108.21042pt.
- [6 <./saddle_prehension.png (PNG copy)>]
-<./worm_params.png, id=40, 703.12688pt x 709.90219pt>
+Package pdftex.def Info: ./saddle_prehension.png  used on input line 597.
+(pdftex.def)             Requested size: 151.76744pt x 100.80574pt.
+ [5 <./prehension_params.png (PNG copy)>]
+<./prehension_h.png, id=38, 390.70969pt x 230.36063pt>
+File: ./prehension_h.png Graphic file (type png)
+<use ./prehension_h.png>
+Package pdftex.def Info: ./prehension_h.png  used on input line 629.
+(pdftex.def)             Requested size: 151.76744pt x 89.48174pt.
+
+Overfull \hbox (72.53015pt too wide) in alignment at lines 692--695
+ [][][] []
+ []
+
+[6 <./saddle_prehension.png (PNG copy)> <./prehension_h.png (PNG copy)>]
+<./worm_params.png, id=42, 703.12688pt x 709.90219pt>
 File: ./worm_params.png Graphic file (type png)
 <use ./worm_params.png>
-Package pdftex.def Info: ./worm_params.png  used on input line 622.
+Package pdftex.def Info: ./worm_params.png  used on input line 719.
 (pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
+<./worm_saddle.png, id=43, 345.54094pt x 304.13625pt>
+File: ./worm_saddle.png Graphic file (type png)
+<use ./worm_saddle.png>
+Package pdftex.def Info: ./worm_saddle.png  used on input line 738.
+(pdftex.def)             Requested size: 151.76744pt x 133.58368pt.
 File: ./worm_params.png Graphic file (type png)
 <use ./worm_params.png>
-Package pdftex.def Info: ./worm_params.png  used on input line 639.
+Package pdftex.def Info: ./worm_params.png  used on input line 769.
 (pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
 
-Underfull \vbox (badness 6477) has occurred while \output is active []
-
-File: ./worm_params.png Graphic file (type png)
-<use ./worm_params.png>
-Package pdftex.def Info: ./worm_params.png  used on input line 663.
-(pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
-File: ./worm_params.png Graphic file (type png)
-<use ./worm_params.png>
-Package pdftex.def Info: ./worm_params.png  used on input line 677.
-(pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
- [7 <./worm_params.png (PNG copy)>]
+[7 <./worm_params.png (PNG copy)> <./worm_saddle.png (PNG copy)>]
 No file bistablepdfs.bbl.
-[8] (./bistablepdfs.aux) ) 
+[8
+
+] (./bistablepdfs.aux) ) 
 Here is how much of TeX's memory you used:
- 2714 strings out of 480623
- 37932 string characters out of 5906692
- 289263 words of memory out of 5000000
- 18568 multiletter control sequences out of 15000+600000
- 549489 words of font info for 56 fonts, out of 8000000 for 9000
- 1137 hyphenation exceptions out of 8191
+ 2361 strings out of 483183
+ 31624 string characters out of 5966291
+ 272750 words of memory out of 5000000
+ 17351 multiletter control sequences out of 15000+600000
+ 551969 words of font info for 68 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
  38i,14n,29p,239b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8
-r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on bistablepdfs.pdf (8 pages, 603921 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.
+enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on bistablepdfs.pdf (8 pages, 743496 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 97 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
