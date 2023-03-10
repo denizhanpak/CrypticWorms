@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.10.31)  8 MAR 2023 20:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.10.31)  10 MAR 2023 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -198,81 +198,79 @@ Underfull \vbox (badness 3503) has occurred while \output is active []
 
 
 ] [2]
-<./cubic_params.png, id=22, 878.53218pt x 885.3075pt>
+<./cubic_params.png, id=22, 733.23938pt x 733.99219pt>
 File: ./cubic_params.png Graphic file (type png)
 <use ./cubic_params.png>
-Package pdftex.def Info: ./cubic_params.png  used on input line 292.
-(pdftex.def)             Requested size: 151.76744pt x 152.93184pt.
-<./basins.png, id=23, 1246.6575pt x 153.57375pt>
+Package pdftex.def Info: ./cubic_params.png  used on input line 304.
+(pdftex.def)             Requested size: 151.76744pt x 151.91414pt.
+<./basins.png, id=23, 1032.10594pt x 127.22531pt>
 File: ./basins.png Graphic file (type png)
 <use ./basins.png>
-Package pdftex.def Info: ./basins.png  used on input line 322.
-(pdftex.def)             Requested size: 151.76744pt x 18.69519pt.
+Package pdftex.def Info: ./basins.png  used on input line 334.
+(pdftex.def)             Requested size: 151.76744pt x 18.70636pt.
 
-Overfull \hbox (10.18974pt too wide) in alignment at lines 339--345
+Overfull \hbox (10.18974pt too wide) in alignment at lines 351--357
  [][][] []
  []
 
-<./saddle_cubic.png, id=24, 570.63188pt x 316.18124pt>
+<./saddle_cubic.png, id=24, 496.85625pt x 266.49562pt>
 File: ./saddle_cubic.png Graphic file (type png)
 <use ./saddle_cubic.png>
-Package pdftex.def Info: ./saddle_cubic.png  used on input line 349.
-(pdftex.def)             Requested size: 151.76744pt x 84.09157pt.
+Package pdftex.def Info: ./saddle_cubic.png  used on input line 361.
+(pdftex.def)             Requested size: 151.76744pt x 81.401pt.
 [3 <./cubic_params.png (PNG copy)> <./basins.png (PNG copy)> <./saddle_cubic.pn
 g (PNG copy)>]
 <./cubic_h.png, id=29, 938.00438pt x 500.62032pt>
 File: ./cubic_h.png Graphic file (type png)
 <use ./cubic_h.png>
-Package pdftex.def Info: ./cubic_h.png  used on input line 423.
+Package pdftex.def Info: ./cubic_h.png  used on input line 435.
 (pdftex.def)             Requested size: 151.76744pt x 80.99463pt.
  [4 <./cubic_h.png (PNG copy)>]
-<./prehension_params.png, id=33, 898.85812pt x 910.15031pt>
+<./prehension_params.png, id=33, 721.94719pt x 721.94719pt>
 File: ./prehension_params.png Graphic file (type png)
 <use ./prehension_params.png>
-Package pdftex.def Info: ./prehension_params.png  used on input line 552.
-(pdftex.def)             Requested size: 151.76744pt x 153.66803pt.
-<./saddle_prehension.png, id=34, 405.76593pt x 269.50688pt>
+Package pdftex.def Info: ./prehension_params.png  used on input line 564.
+(pdftex.def)             Requested size: 151.76744pt x 151.76761pt.
+ [5 <./prehension_params.png (PNG copy)>]
+<./saddle_prehension.png, id=37, 405.76593pt x 269.50688pt>
 File: ./saddle_prehension.png Graphic file (type png)
 <use ./saddle_prehension.png>
-Package pdftex.def Info: ./saddle_prehension.png  used on input line 597.
+Package pdftex.def Info: ./saddle_prehension.png  used on input line 609.
 (pdftex.def)             Requested size: 151.76744pt x 100.80574pt.
- [5 <./prehension_params.png (PNG copy)>]
 <./prehension_h.png, id=38, 390.70969pt x 230.36063pt>
 File: ./prehension_h.png Graphic file (type png)
 <use ./prehension_h.png>
-Package pdftex.def Info: ./prehension_h.png  used on input line 629.
+Package pdftex.def Info: ./prehension_h.png  used on input line 641.
 (pdftex.def)             Requested size: 151.76744pt x 89.48174pt.
-
-Overfull \hbox (72.53015pt too wide) in alignment at lines 692--695
+ [6 <./saddle_prehension.png (PNG copy)> <./prehension_h.png (PNG copy)>]
+Overfull \hbox (38.97646pt too wide) in alignment at lines 704--707
  [][][] []
  []
 
-[6 <./saddle_prehension.png (PNG copy)> <./prehension_h.png (PNG copy)>]
-<./worm_params.png, id=42, 703.12688pt x 709.90219pt>
+<./worm_params.png, id=42, 724.20563pt x 717.43031pt>
 File: ./worm_params.png Graphic file (type png)
 <use ./worm_params.png>
-Package pdftex.def Info: ./worm_params.png  used on input line 719.
-(pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
+Package pdftex.def Info: ./worm_params.png  used on input line 734.
+(pdftex.def)             Requested size: 151.76744pt x 150.34734pt.
 <./worm_saddle.png, id=43, 345.54094pt x 304.13625pt>
 File: ./worm_saddle.png Graphic file (type png)
 <use ./worm_saddle.png>
-Package pdftex.def Info: ./worm_saddle.png  used on input line 738.
+Package pdftex.def Info: ./worm_saddle.png  used on input line 753.
 (pdftex.def)             Requested size: 151.76744pt x 133.58368pt.
 File: ./worm_params.png Graphic file (type png)
 <use ./worm_params.png>
-Package pdftex.def Info: ./worm_params.png  used on input line 769.
-(pdftex.def)             Requested size: 151.76744pt x 153.22176pt.
-
+Package pdftex.def Info: ./worm_params.png  used on input line 784.
+(pdftex.def)             Requested size: 151.76744pt x 150.34734pt.
 [7 <./worm_params.png (PNG copy)> <./worm_saddle.png (PNG copy)>]
 No file bistablepdfs.bbl.
 [8
 
 ] (./bistablepdfs.aux) ) 
 Here is how much of TeX's memory you used:
- 2361 strings out of 483183
- 31624 string characters out of 5966291
- 272750 words of memory out of 5000000
- 17351 multiletter control sequences out of 15000+600000
+ 2360 strings out of 483183
+ 31613 string characters out of 5966291
+ 272741 words of memory out of 5000000
+ 17350 multiletter control sequences out of 15000+600000
  551969 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,14n,29p,239b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -290,7 +288,7 @@ m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on bistablepdfs.pdf (8 pages, 743496 bytes).
+Output written on bistablepdfs.pdf (8 pages, 733457 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream

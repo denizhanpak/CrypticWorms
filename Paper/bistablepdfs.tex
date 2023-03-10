@@ -78,16 +78,16 @@ anon@ymous.com} % email of corresponding author
 
 \begin{abstract}
 % Abstract length should not exceed 250 words
-    We present a novel method for relating experimental probability
-    distributions of multistable systems to the parameters of a
-    multistable model. We demonstrate that when such probability 
-    distributions are fixed this implies that there is a fixed
-    set of relations among the model parameters. Such relations 
+    We present a novel method for relating experimental data from 
+    multistable systems to the parameters of the
+    underlying model. In particular, we demonstrate how to derive a 
+    relation between model parameters from an observed probability
+    distribution. Such relations 
     can help make predictions of parameters that aren't measured
     from ones that are. We apply this method
     to the canonical example of a bistable dynamical system: the cubic
     system.
-    As well as to two theoretical models one of planerian regeneration
+    As well as to two theoretical models: one of planerian regeneration
     and one of infant prehension learning.
 \end{abstract}
 
@@ -98,16 +98,15 @@ of such systems to take on different stable states
 depending on contextual factors. One set of mechanisms that allows for such 
 behavior is the presence of multiple long term stable states. Multistability
 appears in a vast range of biological process ranging from microscale
-genetic networks to macroscale population interactions. Across many levels 
-of time and space biological systems seem to be able to adapt to new contexts
+genetic networks to macroscale population interactions (cite). Across many levels 
+of time and space, biological systems seem to be able to adapt to new contexts
 by maintaining multiple dominant stable modes.
 
 Multistability has also
-emerged as a useful tool in a explaining a large range of experimental phenomena.
+emerged as a useful tool for  explaining a large range of emprical phenomena.
 Unlike theoretical models however, in the experimental context stochasticity
-is unavoidable. As a result a common empirical practice is to sample what 
-would be in the model, many possible trajectories of the system until they
-reach equilibrium. 
+is unavoidable. Therefore, experimental work often takes the form of sampling
+many trajectories across a given system.
 Such sampling leads to a distribution of the stable states expressed as 
 probabilities. This allows the experimenter to characterize the attractor
 landscape and identify the range of possible equilibria.
@@ -116,9 +115,10 @@ Developmental dynamics are a particularly interesting case of multistability.
 Developing systems whether behavioral or morphological demonstrate multistability 
 that is not only context decedent but expresses deep regularity in the timing of 
 state transitions. In the case of behavior this can be observed in the existence
-of critical periods or the milestones like progression developmental stages. 
-In the case of morphological development we see this in the stage structure of
-embryogenesis. A mechanistic understanding of how such regularity emerges is 
+of critical periods (cite) or the milestones like progression developmental 
+stages (cite). 
+In the case of morphological development we see this in the stage-like structure of
+embryogenesis (cite). A mechanistic understanding of how such regularity emerges is 
 still in it's infancy.
 
 In the context of the probabilistic approach used to experimentally 
@@ -131,29 +131,32 @@ dependent upon individual factors. Instead, we observe that the probability
 distributions are consistently species specific rather than individual specific.
 
 Two examples of this phenomenon are the regeneration of the planerian flatworm
-and the learning of reach-to-grasp in infants. In the case of planerian
+and the learning of reach-to-grasp in infants. In the case of planerian,
 theoretical models reveal how under certain environmental conditions 
 planerian can develop into two possible configurations. In a natural context
-the planerian when cut in two will regrow. The tail will regrow a head and the
-head will grow a tail. However, experimental data from the Levin lab shows that
+the planerian when cut in two will regrow. The tail will grow a head and the
+head will grow a tail. However, experimental data from the Levin lab (cite) 
+shows that
 if the local electrical potential in the environment changes it is possible for 
 a worm head to grow another head. Even, stranger is that if the potential
 is altered only slightly, cryptic worms will emerge. Cryptic worms when cut 
-may grow another head or a tail. In the case of the tail the child worm is 
+may grow another head or a tail. In the case of the tail, the child worm is 
 also cryptic, even if returned to a normally polarized environment. The oddity
 is that as long as the worm is cryptic the head-tail growth probability is $70\%$
 regardless of the degree of polarization. This fixed probability is unexpected 
-based on the basic theoretical assumptions one would make based on models of the
+based on the naive theoretical assumptions one would make from models of the
 system.
 
 Similarly, infant
 prehension can be modeled as bistable: reach without grasp as one state
 and reach with grasp as another, the system expresses both possibilities in the right
-environmental context. Although an unexpected experimental finding is that in
+environmental context (cite). 
+Although an unexpected experimental finding is that in
 both cases: the probability distributions across surprisingly large changes
 to the relevant context remains relatively static. Infants maintain an extended 
 period in which grasping starts to occur at a fixed probability. This is not a gradual
-increase but rather a phase transition where for an extended period of time the probabilty
+increase but rather a phase transition where for an extended period of time 
+the probabilty
 of reaching with and without grasping stays the same.
 From a theoretical standpoint this seems 
 counter-intuitive since changes over time and across infants would be expected 
@@ -161,7 +164,7 @@ to shift the basins of attraction and hence change the resultant probability
 distribution. Instead we see a period of relatively static probability.
 
 Although, the source of this phenomena may be system specific and rely on deep
-biological principles it serves as a fascinating example where the theoretical 
+biological principles, it serves as a fascinating example where the theoretical 
 tools of dynamical systems could serve as a means of making experimental predictions.
 In this work we propose a method to exploit such multistable regularity. We consider
 theoretical models for both of these phenomena and identify how fixed 
@@ -182,18 +185,10 @@ In all three cases the method will have the following steps:
 First we identify a 1D differential equation with 2 parameters: 
 \begin{eqnarray}
   \label{ydot}
-  \dot{y} = g(y; \alpha_1, \alpha_2)
+  \dot{y} = f(y; \alpha_1, \alpha_2)
 \end{eqnarray}
-For this work we are concerned with bistable systems which means that $g$
+For this work we are concerned with bistable systems which means that $f$
 has 3 equillibria: 2 stable and 1 unstable.
-
-Based on this vector field function $g$ we define a new function $f$ such that
-\begin{eqnarray}
-  f(\alpha_1,\alpha_2) = SP
-\end{eqnarray} 
-
-where $SP \in Y$ is the position in state space of the
-unstable equilibrium.
 
 Next we define a sampling distrubution $P$ which determines how likely a 
 point in the state space $Y$ is to be sampled. As with any probability distrubition
@@ -205,7 +200,8 @@ the sum over all possible states must be 1.
   \int_{-\infty}^{\infty}P(y)dy = 1
 \]
 For this work we consider $P(y)$ to be a bounded uniform distrbution.
-Meaning that there exists a range $[y_{min},y_{max}]\subseteq Y$ such that any $y$ 
+This means that there exists a range $[y_{min},y_{max}]\subseteq Y$ 
+such that any $y$ 
 within that range has equal sampling probability and every $y$ outside
 that range has a probability of $0$.
 \begin{eqnarray}
@@ -219,11 +215,11 @@ that range has a probability of $0$.
 Although the method is generic to sampling distrbution one advantage of this specific
 $P(y)$ is that it's integral can be expressed in closed form:
 \begin{eqnarray}
-  \int_{-\infty}^{x} P(y) dy = 
+  \int_{-\infty}^{y} P(y) dy = 
   \begin{cases}
-        0 & \text{for } x < y_{min}\\
-        \frac{x-y_{min}}{y_{max} - y_{min}} & \text{for } y_{min}\leq x\leq y_{max}\\
-        1 & \text{for } x > y_{max}
+        0 & \text{for } y < y_{min}\\
+        \frac{y-y_{min}}{y_{max} - y_{min}} & \text{for } y_{min}\leq y\leq y_{max}\\
+        1 & \text{for } y > y_{max}
   \end{cases}
 \end{eqnarray}
 
@@ -249,14 +245,30 @@ all points across those ranges.
 \end{eqnarray}
 
 In this paper we consider situations in which either $P_{low}$ or $P_{high}$ is a 
-known constant. From this constant and our assumed sampling distribution $P(y)$ we 
-can determine the value of $SP$, the location of the unstable equilibrium in 
-state space, by inverting the integral in equation (5, 6).
+known constant in the interval $(0,1)$. From this constant and our 
+sampling distribution $P(y)$, we 
+can determine the value of $SP$. The location of the unstable equilibrium in 
+state space, by inverting the integral in equations (5, 6).
 
-Using our knowledge of $SP$ we then use the equality $f(\alpha_1,\alpha_2) = SP$ to
-solve for a relation $h$ between $\alpha_1$ and $\alpha_2$.
+\begin{eqnarray}
+  SP = P_{low}(y_max-y_{min}) + y_{min}\\
+  SP = (1-P_{high})(y_max-y_{min}) + y_{min}
+\end{eqnarray}
+
+Equations (5, 6) are unique to our choice of sampling distrbution
+while the approach itself is not. However, in the cases where $P(y)$
+is more complex solve $SP$ from $P_{high}$ or $P_{low}$ may be more
+difficult.
+
+Since it is an equilibrium point, we know 
 \[
-  h(\alpha_1) = \alpha_2
+  f(SP; \alpha_1,\alpha_2) = 0
+  \]
+
+Solving this equality analytically or numerically we can find a relation $g$
+such that:
+\[
+  g(\alpha_1) = \alpha_2
   \]
 Hence we derive a relation between parameters of a dynamical model based only on 
 observable equilibrium outcomes.
@@ -271,7 +283,7 @@ an equillibrium at either cyan or magenta. In this case our hypothetical develop
 process is modeled as a cubic equation.
 
 \begin{eqnarray}
-    \dot{y} = \beta_1 + \beta_2 y + y^3
+    \dot{y} = \beta_1 + \beta_2 y - y^3
 \end{eqnarray}
 
 $y$ represents the color of the alien. $\beta_1$ and $\beta_2$ are model 
@@ -690,17 +702,20 @@ bistability where as cryptic worms are thought to occuppy the bistable region (c
 This is the model we will use for the rest of this example.
 
 \begin{eqnarray}
-  \dot{y}=-\frac{2 (g_{max}-0.02) y}{1\, +0.0000454 e^{-0.5 y}
-  +0.0000454 e^{0.5 y}}+70 g_{pol}-4.09 y-280
+  \dot{y} = \frac{y (440.529\, -22026.5 g_{max})}{\cosh (0.5 y)+11013.2}
+  +g_{pol} (-y-10)-0.09 y+4
 \end{eqnarray}
 
 We have simpliefied the model significantly from it's original formulation by replacing
 parameters with their experimentally observed values. We have also reduced this from a 
 2D to a 1D system by considering the difference in polarity 
 between head and tail rather
-than head and tail as seperate dimensions. This works in this case 
+than head and tail as seperate dimensions. We have also fixed the tail polarity to
+it's approximate equillibrium value, which is nearly identitical in both of the stable
+states. 
+This reduction works in this case 
 because the difference
-in polarity is sufficient for applying the method.
+in polarity is sufficient for analyzing the multistability of this system.
 This leaves us with two free parameters
 $g_{pol},g_{max}$. $g_{pol}$ is the intrinsic polarity of the head cells
 and $g_{max}$ is the maximum conductance across the gap junction.
