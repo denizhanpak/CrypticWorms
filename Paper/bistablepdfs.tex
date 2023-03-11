@@ -1,6 +1,8 @@
 \documentclass[letterpaper]{article}
 
 \usepackage{natbib,alifeconf,amsmath,amsfonts}  %% The order is important
+\usepackage{caption}
+\usepackage{subcaption}
 
 
 % *****************
@@ -256,14 +258,14 @@ state space, by inverting the integral in equations (5, 6).
 \end{eqnarray}
 
 Equations (5, 6) are unique to our choice of sampling distrbution
-while the approach itself is not. However, in the cases where $P(y)$
-is more complex solve $SP$ from $P_{high}$ or $P_{low}$ may be more
-difficult.
+while the approach itself is not. In cases where $P(y)$
+is more complex, solving $SP$ using $P_{high}$ or $P_{low}$ may be more
+difficult, although should be possible using numerical techniques.
 
 Since it is an equilibrium point, we know 
 \[
   f(SP; \alpha_1,\alpha_2) = 0
-  \]
+\]
 
 Solving this equality analytically or numerically we can find a relation $g$
 such that:
@@ -278,7 +280,7 @@ To make the method clearer we imagine a hypothetical developmental
 process. An alien is born yellow. As the alien ages depending
 on various factors it may turn cyan or magenta. After much experimental observation
 and some intense curve fitting, we identify a dynamic
-model that assumes that the color is a one dimensional variable that reaches 
+model that assumes that the color is a one-dimensional variable that reaches 
 an equillibrium at either cyan or magenta. In this case our hypothetical developmental
 process is modeled as a cubic equation.
 
@@ -302,9 +304,10 @@ range of possible outcomes.
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=2.1in,angle=0]{./cubic_params.png}
-\caption{The effect is that $\beta_2$ determines the curvature around the 
-center (horizontal)
-and $\beta_1$ determines where the function reaches equilibrium (vertical).
+\caption{Effects of parameter variation on equation (9). 
+(Horizontal): $\beta_2$ determines the curvature around the 
+center.
+(Vertical): $\beta_1$ determines where the function reaches equilibrium.
 If x-intercept is within the curved region this is an example of bistability.}
 \label{cubic_params}
 \end{center}
@@ -320,59 +323,70 @@ trajectories. Luckily our dynamical model gives us an intuitive way of thinking 
 what those counts mean. 
 
 If we imagine each individual as a specific trajectory through
-the state space of the model then we are simply sampling initial conditions 
+the state space of the model then we are sampling initial conditions 
 and counting how many end up in each basin of attraction, we visualize this 
 in Figure \ref{basins}. Each
-colored point represents an individual and the color represents their color after
+square represents an individual and the coloration represents their color after
 the developmental process. As previously noted the unstable equillibrium acts as a
 divider between the two stable equillibrium states. 
 Points to
-the left will be cyan and points to the right will be magenta. 
+the left will be cyan and points to the right will be magenta. The position of 
+this divider can be shifted as through reparameterization of the model.
 
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=2.1in,angle=0]{./basins.png}
-\caption{Here we see the phase portrait of the system. The blue points represent
-the stable equillibria and the red point is the saddle node. The magenta volume
-represents the region of points that will end up in one basin and the cyan volume
-represents the rest of the volume which will end up in the other basin of attraction.
-The points above the volumes represent sampled trajectories colored by the 
-basin they will end up in.}
+\caption{
+  A possible parameterization of the  model. The line is the phase space
+  of the system. The two points, with arrows toward them, are
+  the cyan (left) and magenta (right) attractors. 
+The green point, in between is the unstable equilibrium. Any point sampled 
+in the space will move to the attractor along the indicated arrows. The 
+squares represent such points, colored by their final equilibrium.}
 \label{basins}
 \end{center}
 \end{figure}
 
-An unstable attractor is a critical point of the vector field ($\dot{y} = 0$) and
-whose derivative is positive ($\ddot{y} > 0$) (cite). 
-Based on this criterion we will define a function $f$ which 
-takes as inputs two parameters $\beta_1$ and $\beta_2$ and returns the position
-of the unstable equilibrium, $SP$.
+An unstable attractor is a critical point of the vector field ($\dot{y} = 0$),
+whose derivative is positive ($\ddot{y} > 0$) (cite). In the case of the cubic,
+we can write out the location of the unstable equilibrium, $SP$, as a function of
+the parameter $\beta_1$ and $\beta_2$ in equation (10).
 
 \begin{eqnarray}
 SP = \frac{\sqrt[3]{-6} 
 \left(\sqrt{81 \beta_1^2-12 \beta_2^3}-9 \beta_1\right)^{2/3}-2 
 (-3)^{2/3} \beta_2}{3\ 2^{2/3} \sqrt[3]
-{\sqrt{81 \beta_1^2-12 \beta_2^3}-9 \beta_1}}\\
-f(\beta_1,\beta_2) = SP
+{\sqrt{81 \beta_1^2-12 \beta_2^3}-9 \beta_1}}
 \end{eqnarray}
+
+
+Depending only on $\beta_1$ and $\beta_2$ we
+can determine the location of the unstable equillibrium, and thus specify the 
+threshold for when points fall in one or the other attractor. How the parameters
+affect $SP$ is visualized in Figure \ref{cubic_saddle}.
+Although complex, we were able to derive $SP$ analytically from the cubic equation. 
+In the more general case identifying the unstable equilibrium as a function 
+of parameters may require numerical methods. Additionally, the method steps
+as described do not necessitate explicitly solving for $SP$, since this can be
+done implicitly when solving for the relation $g$. However, visualizing how 
+$SP$ is related to the model parameters makes it easier to intuit the method,
+and will be repeated for the other models. 
 
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=2.1in,angle=0]{./saddle_cubic.png}
-\caption{This is the surface of the saddle point location as a function of
-the parameter $\beta_1$ and $\beta_2$. The manifold is embedded into probability
-dimension representing the probability of a trajectory leading to the cyan attractor.}
+\caption{The surface of the unstable equilibrium location as a function of
+the parameters $\beta_1$ and $\beta_2$. This forms a 2D manfold that is embedded in 
+the 3D configuration space of the model. The position of the equilibrium point $y$
+is shifted as we change the parameters.}
 \label{cubic_saddle}
 \end{center}
 \end{figure}
 
-Depending only on $\beta_1$ and $\beta_2$ we
-can determine where the saddle point and thus the basins of attractions will be.
-Although a little hairy, we were able to derive this function analytically. In 
-the more general case identifying the saddle point as a function of parameters 
-may require numerical methods. The function itself is visualized in
-Figure \ref{cubic_saddle}. 
-
+We are interested in a method for relating empirical observations
+of equilibria to model parameters. We have just seen how parameters can
+effect the model itself. The next step is to consider the empirical 
+observations.
 The alienologists find a fascinating result that there
 are always 3 cyan aliens for each 7 magenta aliens. This can be stated as 
 
@@ -385,7 +399,8 @@ This seems to be the case regardless
 of which cluster they observe. This is odd because many alienologists have
 also observed that $\beta_1$ and $\beta_2$ can vary in different clusters. 
 If we consider this puzzle in the context of our dynamical
-model, one way to interpret is that we observe a fixed ratio of the basins of
+model, one way to interpret is that we observe a fixed ratio of sizes of 
+the basins of
 attraction. Intuitively this shouldn't be the case since the different
 clusters have different parameters which would imply different basin boundaries.
 Although seemingly contrived, as will be detailed later, 
@@ -402,7 +417,7 @@ about how the experiment is conducted. This is the previously mentioned
 sampling distrbution.
 This may be known in an emprically studied system but for theoretical 
 clarity we will use the maximum entropy uniform distribution. We will also add
-bounds to this distribution so as to meet the integral requirment for 
+bounds to this distribution so as to meet the integral requirment for continious
 probabilities. For this example we take $y_{min} = -2$ and $y_{max} = 2$.
 Thus equation \ref{bound_uniform} becomes:
 \begin{eqnarray}
@@ -413,68 +428,97 @@ Thus equation \ref{bound_uniform} becomes:
     \end{cases}
 \end{eqnarray}
 
-We now have $f(\beta_1,\beta_2), P(y)$, and $P_{cyan}$. These are all the 
+We now have all the 
 ingredients necessary to identify the relation 
-\[h(\beta_1) = \beta_2\]
+\[g(\beta_1) = \beta_2\]
 
-Plugging in the known constant into equation (4), we get:
+Plugging in the known constants into equation (7), we get:
+
+\begin{equation}
+  \begin{aligned}
+  SP = P_{cyan}(y_{max}-y_{min}) + y_{min}\\
+  = 0.3(2 + 2) - 2 = -0.8
+  \end{aligned}
+\end{equation}
+
+This equality tells us that there is a point in state space that 
+the unstable equilibrium
+must occupy to give our observed probability distribution of stable states.
+In the contex of the model's configuration space, this is a plane that cuts through
+$y = -0.8$ (Figure \ref{cubic_h}a). This plane also intersect with the 
+manifold defined in equation (10) and visualized in Figure (\ref{cubic_saddle}).
+This intersection along with it's 2D projections can be seen in 
+Figure (4). 
+
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.35\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{cubic_h.png}
+            \caption[]%
+            {Configuration Space}    
+            \label{fig:mean and std of net14}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.2\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{cubic_h_top.png}
+            \caption[]%
+            {{\small Parameter Space}}    
+            \label{fig:mean and std of net24}
+        \end{subfigure}
+    \caption{(a) The manifold of the saddle point location as a function of
+    the parameter $\beta_1$ and $\beta_2$, intersected with a plane at $SP=-0.8$.
+    (b) A projection of the manifolds from configuration space to parameter space.
+    The intersection highlighted in black represents the parameter relation $g$.}
+    \label{cubic_h}
+    \end{figure*}
+
+Intuitively the intersection of the plane and the unstable manifold is the set
+of parameter values that are bistable and match the observed data. Hence we 
+can interpret the intersection as a fixed relation between $\beta_1$ and $\beta_2$
+that results from experimental constraints, a relation $g$. 
+
+Although this visual intuition clarifies the method, we can solve for $g$ directly
+without having to find the complete unstable manifold. We can do this by considering
+the vector field function as defined in equation (9). We are concerned with values
+for $\beta_1$ and $\beta_2$ such that the derivative at $SP$ 
+is $0$. This can be written as:
+
+\begin{equation}
+  \begin{aligned}
+  \beta_1 + \beta_2 (SP) - (SP)^3 = 0\\
+  = \beta_1 - \frac{4}{5} \beta_2 + \frac{64}{125}
+  \end{aligned}
+\end{equation}
+
+The last step is to use equation (15) to solve for $g(\beta_1) = \beta_2$
+
 \begin{eqnarray}
-  P_{cyan} = 0.3 = \int_{-\infty}^{SP} P(y)dy
-\end{eqnarray}
-
-The next step is to solve for $SP$. In this case, because of our choice $P(y)$
-we can solve for $SP$ analytically. Since $P_{cyan}$ is neither 1 nor 0 we know 
-that $SP \in [y_{min},y_{max}]$:
-
-\begin{eqnarray}
-  SP = P_{cyan}(y_{max}-y_{min}) + y_{min} = -0.8
-\end{eqnarray}
-
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=2.1in,angle=0]{./cubic_h.png}
-\caption{This is the surface of the saddle point location as a function of
-the parameter $\beta_1$ and $\beta_2$, intersected with a plane at $SP=-0.8$.
-The intersection represents the parameter relation $h$.}
-\label{cubic_h}
-\end{center}
-\end{figure}
-
-The last step in this process is to invert the function $f(\beta_1,\beta_2)$ 
-and use the found value of $SP$ to identify a relation $h$ on $\beta_1$ and $\beta_2$.
-One way to visually intepret this relation is presented in Figure \ref{cubic_h}.
-The fixed probability acts as a plane that intersects the y-axis exactly at the
-saddle point. Thus the model parameters are no longer just defined by the whole
-saddle manifold but instead are restricted to points along that manifold that intersect
-with this plane. 
-
-
-\begin{eqnarray}
-    \beta_1 = h(\beta_2) = -0.512 + 0.8 \beta_2
+  g(\beta_1) = \frac{5\beta_1}{4} + \frac{16}{25} = \beta_2
 \end{eqnarray}
 
 Once again the simplicity of our example makes it possible to analytically 
-solve this problem
-by taking the inverse of $f$ and solving for $f(\beta_1,\beta_2) = -0.8$.
+solve this problem and write the terms exactly.
 In general however, we might need to make a numerical
 approximation to be able to determine this relation. This will come up in the 
 later examples.
 
-The line $h$ is a fixed relationship between
-the two parameters, $\beta_1$ and $\beta_2$ that must be satisfied for us to 
-unify the experimental observation with
-our model. Hence we expect that if the experimenters were to measure $\beta_1$ and 
-$\beta_2$ they would fall on the line satisfying the equation. An alienologist 
-should then be able to predict $\beta_1$ or $\beta_2$ given that they
-know the other. This relation thus gives us a whole new way to validate or
+We can see that $g$ is a line that relates $\beta_1$ and $\beta_2$
+(Figure \ref{cubic_h}). The parameters
+must lay along this line to fit the model to experimental data. This also makes 
+a prediction for future experiments. If an alienologist were to measure either
+$\beta_1$ or $\beta_2$, they should observe the corresponding value for the
+other parameter. This relation thus gives us a whole new way to validate or
 falsify our original model. 
 
-Now that we have established the steps to apply the method in a simple case we will now 
-consider the same sequence of operations in the case of two models of real world experimental
-systems. Although we may need to use numerical approximations and our parameters may not
-be easily interpretable we will see that the same steps can be applied.
+Now that we have established the steps to apply the method in a simple case we will
+consider the same sequence of operations in the case of two models of real world
+experimental
+systems. Although we may need to use numerical approximations and 
+our parameters may not
+be as easily interpretable we will see that the same steps can be applied.
 
-\subsection{Infant Prehension}
+\section{Infant Prehension}
 
 Infant prehension or reach-to-grasp is an important developmental milestones 
 for many primates including humans (cite). Not only is the behavior itself
@@ -493,20 +537,20 @@ Much like our alien example, experiments in prehension development
 have shown that after
 the emergence of grasping we observe a narrow probability distribution 
 while bistability
-remains. Although infants eventually will grasp with every reach until 
-then, there seems to
+remains. Although infants eventually will grasp with every reach, until 
+then there seems to
 be a fixed probability distribution of reaching-to-grasp and 
 reaching-without-grasp (cite).
 We will treat this as meaning there is a constant probability across 
-both stable outcomes,
-however, extensions of this work could improve the method to account for
+both stable outcomes.
+However, extensions of this work could improve the method to account for
 more complex distributions.
 Either way the fact that the probability distribution is narrow is still 
 enough to suggest
 there may be an important relation between the model parameters.
 
-There is a major difference between this example and our previous example however. 
-In the previous  section we demonstrated how this method can be applied to a simple
+There is one major difference between this example and our previous example.
+Previously we demonstrated how this method can be applied to a simple
 toy model and how given an experimentally observed probability we could make a prediction
 about the model parameters. In many cases the exact model parameters are 
 not singular observables but instead are a function of observables. In such cases we 
@@ -523,7 +567,7 @@ model the researchers looked at many possible parameters and considered
 their effect on 
 the resulting probability of either of the bistable outcomes. 
 They found that the results
-were best explained a by version of the cubic equation.
+were best explained by a version of the cubic equation.
 
 \begin{eqnarray}
   \dot{y} = \beta_1 + \beta_2 (\frac{x-51.04}{26.98}) - (\frac{x-51.04}{26.98})^3
@@ -556,7 +600,7 @@ affect both of these properties however the contribution of
 $w$ to the x-intercept location
 is significantly greater than the contribution of $c$. 
 This will play a role in how the
-manifold looks once it is embedded in the state space 
+manifold looks once it is embedded in the configuration space 
 (Figure \ref{prehension_saddle}).
 
 \begin{figure}[t]
@@ -568,54 +612,53 @@ model curvature and x-intercept position changes as a function of both parameter
 \end{center}
 \end{figure}
 
-Once again we need to start by defining the relationship between $SP$ and 
+Once again we to start by defining the relationship between $SP$ and 
 the parameters.
-This will again take the form of a function $f(c,w)$ that returns the 
-saddlepoint location 
-$SP$.
-Luckily since $\beta_1$ and $\beta_2$ are only linear combinations of $c,w$ we can still
-find the function $f(c,w)$ analytically. Although the closed form 
-has been omitted due to length
-complexity. It is visualized in Figure \ref{prehension_saddle}.
+Luckily since $\beta_1$ and $\beta_2$ are only linear combinations 
+of $c,w$ we can still
+find solve for $SP$ analytically. Although the equations
+has been omitted due to length and
+complexity. The manifold from these equations is visualized 
+in Figure \ref{prehension_saddle}.
 
-\begin{eqnarray}
-  SP = f(c,w)
-\end{eqnarray}
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=2.1in,angle=0]{./saddle_prehension.png}
+\caption{Configuration Space of the prehension model. The manifold
+dictates the position of the unstable equilibrium as we move through
+parameter space.}
+\label{prehension_saddle}
+\end{center}
+\end{figure}
 
 As before we again
-need to define a sampling distrubition. We will do this using a bounded uniform
-pdf for $P(y)$ which is identical to $P(y)$ in equations (3, 13). 
-The only difference being the bounds in this case
+need to specify a sampling distrubition. We will do this using a bounded uniform
+probability density function for $P(y)$ which is identical to 
+$P(y)$ in equations (3, 13). 
+The only difference being the bounds:
 \[
   y_{min} = 0
   \] 
   and 
   \[y_{max} = 100\]
 
-This the volumes represent whether the behavior of grasping
-is preformed rather than the alien's mature
-color. Using the same reasoning we can define the desired $P_{grasp}(y)$, 
+This time the state space represent whether the behavior of grasping
+is preformed rather than the mature alien's
+coloration. Using the same reasoning as before, 
+we can define $P_{grasp}(y)$, 
 the probability
-that in a sampled point the baby will grasp, by integrating the volume. In this case
-the desired volume is on the right of the unstable equillibrium 
+that in a sampled point the baby will grasp, by integrating over the 
+sampling space. In this case
+the desired stable point is on the right of the unstable equillibrium
 so we integrate from $SP$ to $\infty$.
 
 \begin{eqnarray}
     P_{grasp}(y) = \int_{SP}^{\infty}P(y)dy
 \end{eqnarray}
 
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=2.1in,angle=0]{./saddle_prehension.png}
-\caption{The probability we find as we vary saddlepoint by moving in the 
-parameter space of $c,w$. The plane represents the observed constant probability 
-distribution.}
-\label{prehension_saddle}
-\end{center}
-\end{figure}
-
-As before any pair $c,w$ will define an $SP$ and thus a $P_{grasp}$. Unlike 
-our hypothetical the real world is not nearly as neat. Experimental evidence suggests
+Unlike 
+our hypothetical example, the real world is not as neat.
+Experimental evidence suggests
 a distrbution of $P_{grasp}$ rather than a singular constant. However, for this paper
 we will simply pick the mean of this distrbution and treat it as a constant although,
 future work could extend the method to a distrbution of probabilites instead.
@@ -631,38 +674,63 @@ will give us a value for $SP$ which we can then use for restricting our paramete
   SP = P_{grasp}(y_{max}-y_{min}) + y_{min} = 50
 \end{eqnarray}
 
-As before we simply plot this $SP$ as a plane which intersects the saddle manifold
-in parameter space as in Figure \ref{prehension_h}. We see once again this intersection
-forms a 1D curve through parameter space. However, unlike before we cannot write it 
-in closerd form.
+As before we simply plot this $SP$ as a plane which intersects the unstable manifold
+in configuration space as in Figure \ref{prehension_h}. We see
+this intersection also
+forms a 1D line through parameter space. Plugging $SP$ into the model equation (17)
+and setting it to $0$ we can find the relation $g$.
+We could also write out $g$ as in equation (15), although recognizing that due to
+model complexity we may not be able to write it out exactly.
 
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=2.1in,angle=0]{./prehension_h.png}
-\caption{The probability we find as we vary saddlepoint by moving in the 
-parameter space of $c,w$. The plane represents the observed constant probability 
-distribution.}
-\label{prehension_h}
-\end{center}
-\end{figure}
+\begin{equation}
+  \begin{aligned}
+  g(w) = 0.0332347 c-0.180714
+  \end{aligned}
+\end{equation}
 
-This curve, makes a prediction that the fixed probability 
-distribution implies a
+
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{prehension_h.png}
+            \caption[]%
+            {Configuration Space}    
+            \label{fig:mean and std of net14}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.3\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{prehension_h_top.png}
+            \caption[]%
+            {{\small Parameter Space}}    
+            \label{fig:mean and std of net24}
+        \end{subfigure}
+    \caption{(a) The manifold of the saddle point location as a function of
+    the parameters $c$ (circumference) and $w$ (weight), intersected with a plane 
+    at $SP=50$.
+    (b) A projection of the manifolds from configuration space to parameter space.
+    The intersection highlighted in black represents the parameter relation $g$.}
+    \label{prehension_h}
+    \end{figure*}
+
+$g$ is a prediction that the fixed probability 
+distribution implies a certain
 relation between arm circumference and arm weight. As one parameter varies 
-the other should at a proportional degree along the drawn curve.
+the other should vaery at a proportional degree along the drawn line.
 We now have a prediction that can falsify or 
 further validate the cusp model fit in the 
-orignal paper (cite).
+orignal prehension experiments (cite).
 
 In this example we applied the same steps and method to a real world system. 
 We showed how
 more complex parameter relations can be accounted for by adjusting the 
-function $f$ and how
-different parameterizations might imply more complex relations to the 
-resultant probabilites.
-However, since our model was still cubic we were able to use much of 
+how we solve for $SP$ in parameter space. 
+We also saw how more complex parameterizations may lead to more complex expressions
+that can still be solved using the same mathematical machinery.
+However, since our model 
+was still cubic we were able to use much of 
 the same analytical 
-machinery. We will next consider a case where the model is much more 
+approach. We will next consider a case where the model is much more 
 complex, yet we will 
 show with the use of numerical approximation how many of the same 
 steps can be applied.
@@ -701,10 +769,12 @@ model. Normal and double headed worms are modeled as living in parameter space w
 bistability where as cryptic worms are thought to occuppy the bistable region (cite). 
 This is the model we will use for the rest of this example.
 
-\begin{eqnarray}
-  \dot{y} = \frac{y (440.529\, -22026.5 g_{max})}{\cosh (0.5 y)+11013.2}
+\begin{equation}
+  \begin{aligned}
+  \dot{y} = \frac{y (440.529\, -22026.5 g_{max})}{\cosh (0.5 y)+11013.2}\\
   +g_{pol} (-y-10)-0.09 y+4
-\end{eqnarray}
+  \end{aligned}
+\end{equation}
 
 We have simpliefied the model significantly from it's original formulation by replacing
 parameters with their experimentally observed values. We have also reduced this from a 
@@ -748,15 +818,6 @@ Using this guess we can generate a tensor whose first 2 dimensions are the param
 $g_{pol}$ and $g_{max}$ and whose 3rd dimension is the saddlepoint location. This also
 defines a surface which we can plot (Figure \ref{worm_sp}).
 
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=2.1in,angle=0]{./worm_saddle.png}
-\caption{Saddle point location as a function of the two parameters: 
-$g_{pol}$ and $g_{max}$.}
-\label{worm_sp}
-\end{center}
-\end{figure}
-
 This system is another example of the relatively constant state distrbution phenomenon.
 Here the two possible attractors are $P_{cryptic}$ and $P_{two-headed}$. Once again,
 we take the liberty of assuming these distributions are constant rather than simply 
@@ -775,17 +836,36 @@ Using this and the integral from equation (4):
 \end{eqnarray}
 
 This is the plane that we observe in Figure \ref{worm_prob}. The intersection
-of the plane and the manifold is our predicted parameter range. In this to derive
-this figure we had to apply numerical calculations since $f(c,w)$ could not be 
-expressed in closed form
+of the plane and the manifold is our predicted parameter range. Solving for the 
+intersection using numerical approximation we solve for the relation $g$.
 
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=2.1in,angle=0]{./worm_params.png}
-\caption{Worm parameter manifold embedded in probability space}.
-\label{worm_prob}
-\end{center}
-\end{figure}
+\begin{eqnarray}
+  g(g_{max}) = -0.87 - 1.5 g_{pol}
+\end{eqnarray}
+
+\begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{worm_saddle.png}
+            \caption[]%
+            {Configuration Space}    
+            \label{fig:mean and std of net14}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.3\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{worm_saddle_top.png}
+            \caption[]%
+            {{\small Parameter Space}}    
+            \label{fig:mean and std of net24}
+        \end{subfigure}
+    \caption{(a) The manifold of the unstable point location as a function of
+    the parameters $c$ (circumference) and $w$ (weight), intersected with a plane 
+    at $SP=50$.
+    (b) A projection of the manifolds from configuration space to parameter space.
+    The intersection highlighted in black represents the parameter relation $g$.}
+    \label{worm_sp}
+    \end{figure*}
 
 Once again we can see how the constant probability distribution presents a set of 
 constraints on the parameters of the dynamical model. In turn such constraints can
